@@ -1,0 +1,43 @@
+.navigation-bar {
+    background: #f4f4f4;
+    padding: 1rem;
+  }
+  
+  .navigation-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation-list li {
+    margin-right: 1rem;
+  }
+  
+  .main-content {
+    padding: 2rem;
+  }
+  
+  .festival-image {
+    width: max-content;
+    border-radius: 8px;
+  }
+  
+  .festival-name {
+    font-size: 1.2rem;
+  }
+  
+  .festival-details {
+    padding: 2rem;
+  }
+  
+  /* Ensure the body content is hidden by default */
+.bx--accordion__content {
+    display: none;
+  }
+  
+  /* Make sure the content is visible when the accordion item is expanded */
+  .bx--accordion__item--active .bx--accordion__content {
+    display: block;
+  }
+  
