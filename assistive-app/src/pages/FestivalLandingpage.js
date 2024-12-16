@@ -2,11 +2,8 @@ import React from "react";
 import { Accordion, AccordionItem, Button, Grid, Column } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import "../css/FestivalLandingPage.css"
-import festival1Image from "../assets/festival1.jpg"; 
-import festival2Image from "../assets/festival2.jpg"; 
-import festival3Image from "../assets/festival3.jpg"; 
-import festival4Image from "../assets/festival4.jpg"; 
-import festival5Image from "../assets/festival5.jpeg"; 
+
+
 
 const festivals = [
   {
