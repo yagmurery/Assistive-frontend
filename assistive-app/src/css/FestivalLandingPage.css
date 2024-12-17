@@ -1,43 +1,114 @@
+/* Navigation Bar */
 .navigation-bar {
-    background: #f4f4f4;
-    padding: 1rem;
-  }
-  
-  .navigation-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navigation-list li {
-    margin-right: 1rem;
-  }
-  
-  .main-content {
-    padding: 2rem;
-  }
-  
-  .festival-image {
-    width: max-content;
-    border-radius: 8px;
-  }
-  
-  .festival-name {
-    font-size: 1.2rem;
-  }
-  
-  .festival-details {
-    padding: 2rem;
-  }
-  
-  /* Ensure the body content is hidden by default */
+  background: #f4f4f4; /* Light gray for contrast */
+  padding: 1rem;
+  border-bottom: 2px solid #cccccc; /* Add subtle border for clarity */
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-list li {
+  margin-right: 1rem;
+}
+
+/* Navigation Links */
+.navigation-list a {
+  text-decoration: none;
+  color: #005fcc; /* Accessible blue */
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus {
+  color: #004299; /* Darker blue for hover and focus */
+  outline: 2px solid #ffcc00; /* Yellow outline for focus state */
+  border-radius: 3px; /* Adds clarity for outline */
+}
+
+/* Main Content */
+.main-content {
+  padding: 2rem;
+  line-height: 1.6; /* Improve readability */
+  color: #333333;
+  background-color: #ffffff; /* Clean, high-contrast background */
+}
+
+/* Festival Image */
+.festival-image {
+  width: 100%; /* Responsive image */
+  max-width: max-content; /* Limit size for clarity */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  border: 2px solid #cccccc; /* Add visible border for focus */
+}
+
+.festival-image:focus {
+  outline: 2px solid #005fcc; /* High-contrast focus outline */
+}
+
+/* Festival Name */
+.festival-name {
+  font-size: 1.4rem; /* Slightly larger font */
+  font-weight: bold;
+  color: #222222; /* Darker color for readability */
+  margin-top: 10px;
+}
+
+/* Festival Details Section */
+.festival-details {
+  padding: 2rem;
+  background-color: #f9f9f9; /* Light gray for visual distinction */
+  border: 1px solid #cccccc; /* Subtle border for clarity */
+  border-radius: 5px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Accordion Styling */
 .bx--accordion__content {
-    display: none;
-  }
-  
-  /* Make sure the content is visible when the accordion item is expanded */
-  .bx--accordion__item--active .bx--accordion__content {
-    display: block;
-  }
-  
+  display: none; /* Hidden by default */
+  padding: 1rem;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Readable dark text */
+}
+
+.bx--accordion__item--active .bx--accordion__content {
+  display: block; /* Show content when active */
+  border-top: 1px solid #cccccc;
+}
+
+/* Accordion Title */
+.bx--accordion__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.bx--accordion__title:focus {
+  outline: 2px solid #ffcc00; /* Yellow focus outline */
+  border-radius: 3px;
+}
+
+/* Ensure Keyboard Navigation */
+.bx--accordion__item {
+  outline: none; /* Remove default outline */
+  margin-bottom: 20px;
+}
+
+.bx--accordion__item:focus-within {
+  /*outline: 2px solid #ffcc00; /* Focus for accordion container */
+  border-radius: 5px;
+}
+
+button {
+  margin: 20px;
+  background-color: #edf0f3;
+  border-radius: 20%;
+}
