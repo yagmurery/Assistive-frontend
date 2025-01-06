@@ -9,8 +9,10 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          <Route path="/" element={<FestivalLandingPage />} />{" "}
+          {/* Default route */}
           <Route path="/home" element={<FestivalLandingPage />} />
-          <Route path="/contact" element={<ContactPage />}/>
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>
