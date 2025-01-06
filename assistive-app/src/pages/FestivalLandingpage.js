@@ -90,7 +90,9 @@ const FestivalLandingPage = () => {
                     {/* Festival Details */}
                     <Column sm={4} md={6} lg={6}>
                       <h2 className="festival-name">{festival.name}</h2>
-                      <p>{festival.description}</p>
+                      <p className="festival-description">
+                        {festival.description}
+                      </p>
                     </Column>
                   </Grid>
 
