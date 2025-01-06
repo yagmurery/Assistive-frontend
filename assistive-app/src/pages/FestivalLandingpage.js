@@ -2,6 +2,7 @@ import React from "react";
 import {
   Accordion,
   AccordionItem,
+  Tile,
   Button,
   Grid,
   Column,
@@ -71,44 +72,45 @@ const FestivalLandingPage = () => {
       {/* Page Content */}
       <main className="main-content">
         <h1 style={{ margin: "20px" }}>Music Festivals 2025</h1>
-        <Accordion aria-label="Festival list">
-          {festivals.map((festival) => (
-            <AccordionItem
-              className="bx--accordion__item"
-              key={festival.id}
-              title={
-                <Grid>
-                  <Column sm={4} md={6} lg={6}>
-                    <img
-                      src={festival.image}
-                      alt={`Image of ${festival.name}`}
-                      className="festival-image"
-                    />
-                  </Column>
-                  <Column sm={4} md={6} lg={6}>
-                    <span className="festival-name">{festival.name}</span>
-                  </Column>
-                  <Column sm={4} md={6} lg={6}>
-                    <p>{festival.description}</p>
-                  </Column>
-                  <div margin="20px">
+        <div aria-label="Festival list">
+          <Grid>
+            {festivals.map((festival) => (
+              <Column key={festival.id} sm={4} md={8} lg={12}>
+                <Tile className="festival-tile">
+                  <Grid>
+                    {/* Festival Image */}
+                    <Column sm={4} md={6} lg={6}>
+                      <img
+                        src={festival.image}
+                        alt={`Image of ${festival.name}`}
+                        className="festival-image"
+                      />
+                    </Column>
+
+                    {/* Festival Details */}
+                    <Column sm={4} md={6} lg={6}>
+                      <h2 className="festival-name">{festival.name}</h2>
+                      <p>{festival.description}</p>
+                    </Column>
+                  </Grid>
+
+                  {/* Action Button */}
+                  <div style={{ marginTop: "20px" }}>
                     <Button
                       kind="primary"
                       as={Link}
                       to={festival.link}
                       aria-label={`More about ${festival.name}`}
-                      style={{ margin: "20px" }}
+                      className="learn-more-btn"
                     >
                       Learn More
                     </Button>
                   </div>
-                </Grid>
-              }
-            >
-              {/* Wrap all children in a single container */}
-            </AccordionItem>
-          ))}
-        </Accordion>
+                </Tile>
+              </Column>
+            ))}
+          </Grid>
+        </div>
       </main>
     </div>
   );

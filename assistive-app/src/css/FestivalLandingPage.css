@@ -20,8 +20,8 @@
 .navigation-list a {
   text-decoration: none;
   color: #005fcc; /* Accessible blue */
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .navigation-list a:hover,
@@ -39,76 +39,77 @@
   background-color: #ffffff; /* Clean, high-contrast background */
 }
 
-/* Festival Image */
-.festival-image {
-  width: 100%; /* Responsive image */
-  max-width: max-content; /* Limit size for clarity */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px;
-  border: 2px solid #cccccc; /* Add visible border for focus */
-}
-
 .festival-image:focus {
   outline: 2px solid #005fcc; /* High-contrast focus outline */
-}
-
-/* Festival Name */
-.festival-name {
-  font-size: 1.4rem; /* Slightly larger font */
-  font-weight: bold;
-  color: #222222; /* Darker color for readability */
-  margin-top: 10px;
-}
-
-/* Festival Details Section */
-.festival-details {
-  padding: 2rem;
-  background-color: #f9f9f9; /* Light gray for visual distinction */
-  border: 1px solid #cccccc; /* Subtle border for clarity */
-  border-radius: 5px;
-  line-height: 1.6;
-  color: #333333;
-}
-
-/* Accordion Styling */
-.bx--accordion__content {
-  display: none; /* Hidden by default */
-  padding: 1rem;
-  background-color: #ffffff; /* White background */
-  color: #333333; /* Readable dark text */
-}
-
-.bx--accordion__item--active .bx--accordion__content {
-  display: block; /* Show content when active */
-  border-top: 1px solid #cccccc;
-}
-
-/* Accordion Title */
-.bx--accordion__title {
-  font-size: 1.2rem;
-  font-weight: bold;
-
-  cursor: pointer; /* Indicate interactivity */
-}
-
-.bx--accordion__title:focus {
-  outline: 2px solid #ffcc00; /* Yellow focus outline */
-  border-radius: 3px;
-}
-
-/* Ensure Keyboard Navigation */
-.bx--accordion__item {
-  outline: none; /* Remove default outline */
-  margin-bottom: 20px;
-}
-
-.bx--accordion__item:focus-within {
-  /*outline: 2px solid #ffcc00; /* Focus for accordion container */
-  border-radius: 5px;
 }
 
 button {
   margin: 20px;
   background-color: #edf0f3;
   border-radius: 20%;
+}
+
+/* Tile Component */
+
+.festival-tile {
+  padding: 1.5rem;
+  background-color: #ffffff; /* White background for the tile */
+  border: 1px solid #cccccc; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+  margin-bottom: 20px; /* Spacing between tiles */
+}
+
+.festival-tile:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  transform: translateY(-4px); /* Lift effect on hover */
+  outline: 5px solid #005fcc; /* High-contrast focus outline */
+}
+
+.festival-tile:focus-within {
+  outline: 2px solid #ffcc00; /* Yellow focus outline for accessibility */
+  outline-offset: 4px; /* Space between the outline and tile */
+}
+
+/* Tile Content */
+.festival-image {
+  width: 100%; /* Responsive image */
+  max-width: max-content; /* Limit size for clarity */
+  height: auto;
+  object-fit: cover; /* Ensure the image fills the space proportionally */
+  border-radius: 8px; /* Match tile's corner radius */
+}
+
+.festival-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0f62fe; /* Accessible blue color */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.festival-description {
+  font-size: 1rem;
+  color: #333333; /* Readable text color */
+  line-height: 1.5; /* Comfortable reading */
+  margin-bottom: 1rem;
+}
+
+/* Action Button */
+.festival-tile .bx--btn {
+  margin-top: 20px; /* Space above the button */
+}
+
+/* Grid Layout Adjustments */
+.festival-tile .bx--grid {
+  row-gap: 1rem; /* Add spacing between rows in the grid */
+}
+
+.festival-tile .bx--col {
+  padding: 0; /* Remove unnecessary padding within the grid */
+}
+
+.learn-more-btn {
+  font-size: 1.5rem; /* Make the link text larger */
+  color: #0f62fe; /* IBM accessible blue */
 }
