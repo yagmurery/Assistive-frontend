@@ -12,6 +12,7 @@ h2 {
   font-family: Arial, sans-serif; /* Accessible, web-safe font */
   font-weight: bold; /* Ensure headings are distinguishable */
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* H1: Main Page Title */

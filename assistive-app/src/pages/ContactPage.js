@@ -9,6 +9,7 @@ import {
   Grid,
 } from "carbon-components-react";
 import styles from "../css/ContactPage.css";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({

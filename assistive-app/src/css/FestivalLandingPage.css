@@ -20,7 +20,7 @@
 .navigation-list a {
   text-decoration: none;
   color: #005fcc; /* Accessible blue */
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -52,12 +52,21 @@ button {
 /* Tile Component */
 
 .festival-tile {
-  padding: 1.5rem;
+  padding: 1rem; /* Reduce padding for a smaller height */
+  max-width: 800px; /* Limit the width */
+  max-height: auto; /* Smaller height */
+  align-content: center;
   background-color: #ffffff; /* White background for the tile */
   border: 1px solid #cccccc; /* Light gray border */
   border-radius: 8px; /* Rounded corners */
   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
-  margin-bottom: 20px; /* Spacing between tiles */
+  margin: 0 auto; /* Center within its container */
+  display: flex; /* Make the tile a flexbox */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-top: 20px;
 }
 
 .festival-tile:hover {
@@ -73,10 +82,10 @@ button {
 
 /* Tile Content */
 .festival-image {
-  width: 100%; /* Responsive image */
-  max-width: max-content; /* Limit size for clarity */
-  height: auto;
-  object-fit: cover; /* Ensure the image fills the space proportionally */
+  width: 100%; /* Image should adjust based on content */
+  max-width: 100%; /* Limit size for responsiveness */
+  height: 400px; /* Smaller height */
+  object-fit: contain; /* Maintain image proportions */
   border-radius: 8px; /* Match tile's corner radius */
 }
 
@@ -112,4 +121,19 @@ button {
 .learn-more-btn {
   font-size: 1.5rem; /* Make the link text larger */
   color: #0f62fe; /* IBM accessible blue */
+}
+
+.festival-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Full viewport height */
+  background-color: #f5f5f5; /* Optional background for contrast */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }

@@ -6,6 +6,7 @@ import {
   Button,
   Grid,
   Column,
+  Row,
 } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import "../css/FestivalLandingPage.css";
@@ -75,40 +76,44 @@ const FestivalLandingPage = () => {
         <div aria-label="Festival list">
           <Grid>
             {festivals.map((festival) => (
-              <Column key={festival.id} sm={4} md={8} lg={12}>
-                <Tile className="festival-tile">
-                  <Grid>
-                    {/* Festival Image */}
-                    <Column sm={4} md={6} lg={6}>
-                      <img
-                        src={festival.image}
-                        alt={`Image of ${festival.name}`}
-                        className="festival-image"
-                      />
-                    </Column>
+              <Column key={festival.id} sm={2} md={4} lg={6}>
+                <div className="flex-container">
+                  <Tile className="festival-tile">
+                    <Grid>
+                      {/* Festival Image */}
+                      <Row>
+                        <Column sm={4} md={6} lg={6}>
+                          <img
+                            src={festival.image}
+                            alt={`Image of ${festival.name}`}
+                            className="festival-image"
+                          />
+                        </Column>
 
-                    {/* Festival Details */}
-                    <Column sm={4} md={6} lg={6}>
-                      <h2 className="festival-name">{festival.name}</h2>
-                      <p className="festival-description">
-                        {festival.description}
-                      </p>
-                    </Column>
-                  </Grid>
+                        {/* Festival Details */}
+                        <Column sm={4} md={6} lg={6}>
+                          <h2 className="festival-name">{festival.name}</h2>
+                          <p className="festival-description">
+                            {festival.description}
+                          </p>
+                        </Column>
+                      </Row>
+                    </Grid>
 
-                  {/* Action Button */}
-                  <div style={{ marginTop: "20px" }}>
-                    <Button
-                      kind="primary"
-                      as={Link}
-                      to={festival.link}
-                      aria-label={`More about ${festival.name}`}
-                      className="learn-more-btn"
-                    >
-                      Learn More
-                    </Button>
-                  </div>
-                </Tile>
+                    {/* Action Button */}
+                    <div style={{ marginTop: "20px" }}>
+                      <Button
+                        kind="primary"
+                        as={Link}
+                        to={festival.link}
+                        aria-label={`More about ${festival.name}`}
+                        className="learn-more-btn"
+                      >
+                        Learn More
+                      </Button>
+                    </div>
+                  </Tile>
+                </div>
               </Column>
             ))}
           </Grid>
