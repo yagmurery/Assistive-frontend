@@ -37,11 +37,3 @@
   .form-row .form-group {
     flex: 1;
   }
-
-  .form-datepicker {
-    display: inline;
-    padding:0px;
-    padding-left:5px;
-    vertical-align:baseline;
-    position:relative;
-}
