@@ -29,6 +29,12 @@ const TransportPage = () => {
         <form onSubmit={handleSubmit} aria-labelledby="transport-form">
 
             <Tile className = "form-group">
+            <p className="transport-description">
+                {"transport description"}
+            </p>
+            </Tile>
+
+            <Tile className = "form-group">
                 <label htmlFor = "startingPoint"> Starting Point </label>
                 <TextInput
                 type="text"

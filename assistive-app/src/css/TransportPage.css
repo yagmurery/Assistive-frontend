@@ -37,3 +37,10 @@
   .form-row .form-group {
     flex: 1;
   }
+
+  .transport-description {
+    font-size: 1.2rem;
+    color: #333333; /* Readable text color */
+    line-height: 1.5; /* Comfortable reading */
+    margin-bottom: 1rem;
+  }
