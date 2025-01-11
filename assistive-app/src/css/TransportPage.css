@@ -1,0 +1,47 @@
+
+
+.transport-tile {
+    padding: 1rem; /* Reduce padding for a smaller height */
+    max-width: 800px; /* Limit the width */
+    max-height: auto; /* Smaller height */
+    align-content: center;
+    background-color: #ffffff; /* White background for the tile */
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+    margin: 0 auto; /* Center within its container */
+    display: flex; /* Make the tile a flexbox */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-top: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+
+  .form-datepicker {
+    display: inline;
+    padding:0px;
+    padding-left:5px;
+    vertical-align:baseline;
+    position:relative;
+}
