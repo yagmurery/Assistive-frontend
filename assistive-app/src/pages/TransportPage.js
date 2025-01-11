@@ -4,6 +4,7 @@ import "../css/TransportPage.css";
 
 const TransportPage = () => {
     const [formData, setFormData] = useState({
+        startingPoint: "",
         name: "",
         startingPoint: "",
         cardNumber: "",
@@ -33,20 +34,12 @@ const TransportPage = () => {
                 type="text"
                 id="startingPoint"
                 name="startingPoint"
-                value={formData.name}
+                value={formData.startingPoint}
                 onChange={handleChange}
                 required
                 aria-required="true"
             />
             </Tile>
-
-            <Tile className="form-group">
-                <DatePicker class ="form-datepicker" datePickerType="single">
-                    <DatePickerInput  placeholder="dd/mm/yyyy" dateFormat = 'd/m/Y'  labelText="Date" id="date-picker-single"/>
-                </DatePicker>
-            </Tile>
-
-
 
             <Tile className="form-group">
                 <label htmlFor="name">Name</label>
