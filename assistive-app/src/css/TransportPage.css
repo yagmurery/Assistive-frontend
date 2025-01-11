@@ -1,46 +1,100 @@
+.transport-page {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for good contrast */
+  color: #333333; /* Dark text for readability */
+  line-height: 1.6; /* Improve text readability */
+}
+
+/* Headings */
+h1{
+  font-family: Arial, sans-serif; /* Accessible, web-safe font */
+  font-weight: bold; /* Ensure headings are distinguishable */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* H1: Main Page Title */
+h1 {
+  font-size: 2.5rem; /* Slightly larger for better readability */
+  margin-bottom: 25px;
+  color: #222222; /* High contrast dark color */
+}
+
+/* H2: Subheadings */
+h2 {
+  font-size: 2rem; /* Larger font size for accessibility */
+  margin-bottom: 15px;
+  color: #444444; /* Slightly lighter dark text */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 25px;
+}
+
+.datepicker-group{
+  margin-bottom: 25px;
+
+}
+
+.datepicker {
+  width: 100%; /* Full-width for accessibility */
+}
+
+.datepicker-input {
+  width: 90%; /* Full-width for accessibility */
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #cccccc; /* Thicker border for visibility */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for contrast */
+  color: #333333;
+}
+
+/* Labels */
+label {
+  font-size: 1.5rem;
+  font-weight: 600; /* Bold for clarity */
+  color: #333333;
+  display: block; /* Ensures label is above input for clarity */
+  margin-bottom: 5px;
+}
+
+/* Form Inputs */
+input,
+textarea{
+  width: 90%; /* Full-width for accessibility */
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #cccccc; /* Thicker border for visibility */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for contrast */
+  color: #333333;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #005fcc; /* High-contrast blue outline for focus state */
+  border-color: #005fcc;
+}
+
+/* Buttons */
+.buttonTransport {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #005fcc; /* Accessible blue */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #004299; /* Darker blue for hover/focus */
+  outline: 2px solid #ffcc00; /* High-contrast focus indicator */
+}
 
 
-.transport-tile {
-    padding: 1rem; /* Reduce padding for a smaller height */
-    max-width: 800px; /* Limit the width */
-    max-height: auto; /* Smaller height */
-    align-content: center;
-    background-color: #ffffff; /* White background for the tile */
-    border: 1px solid #cccccc; /* Light gray border */
-    border-radius: 8px; /* Rounded corners */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
-    margin: 0 auto; /* Center within its container */
-    display: flex; /* Make the tile a flexbox */
-    flex-direction: column; /* Align items vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    margin-top: 20px;
-  }
-
-  .form-group {
-    margin-bottom: 1rem;
-  }
-  
-  .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  
-  .form-row {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .form-row .form-group {
-    flex: 1;
-  }
-
-  .transport-description {
-    font-size: 1.2rem;
-    color: #333333; /* Readable text color */
-    line-height: 1.5; /* Comfortable reading */
-    margin-bottom: 1rem;
-  }

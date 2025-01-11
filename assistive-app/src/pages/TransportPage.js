@@ -1,126 +1,115 @@
 import React, { useState } from "react";
-import { Tile, Button, TextInput, DatePicker, DatePickerInput } from "carbon-components-react";
-import "../css/TransportPage.css";
+import {
+  TextInput,
+  Button,
+  Form,
+  FormGroup,
+  Column,
+  Grid,
+  DatePicker,
+  DatePickerInput,
+  Row
+} from "carbon-components-react";
+import styles from "../css/TransportPage.css";
 
 const TransportPage = () => {
-    const [formData, setFormData] = useState({
-        startingPoint: "",
-        name: "",
-        startingPoint: "",
-        cardNumber: "",
-        expiry: "",
-        cvv: "",
-      });
+  const [formData, setFormData] = useState({
+    startingPoint: "",
+  });
 
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-      };
-      
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic
-        alert("Purchase completed successfully!");
-      };
+  const handleChange = (event) => {
+    const { startingPoint, value } = event.target;
+    setFormData({ ...formData, [startingPoint]: value });
+  };
 
-      return(
-      <Tile className="transport-tile">
-        <h1>Purchase Transport Ticket to the Festival</h1>
-        <form onSubmit={handleSubmit} aria-labelledby="transport-form">
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted:", formData);
+  };
 
-            <Tile className = "form-group">
-            <p className="transport-description">
-                {"transport description"}
-            </p>
-            </Tile>
+  return (
+    <div>
+      {/* Navigation Bar */}
+      <nav aria-label="Main navigation" className="navigation-bar">
+        <ul className="navigation-list">
+          <li>
+            <Button kind="secondary" as="a" href="/home" aria-label="Home page">
+              Home
+            </Button>
+          </li>
+          <li>
+            <Button
+              kind="secondary"
+              as="a"
+              href="/about"
+              aria-label="About page"
+              margin="100px"
+            >
+              About
+            </Button>
+          </li>
+          <li>
+            <Button
+              kind="secondary"
+              as="a"
+              href="/contact"
+              aria-label="Contact page"
+            >
+              Contact
+            </Button>
+          </li>
+        </ul>
+      </nav>
 
-            <Tile className = "form-group">
-                <label htmlFor = "startingPoint"> Starting Point </label>
+      <main role="main" className="transport-page">
+        <h1>Travel Options</h1>
+        <Grid>
+          <Column>
+            <Form
+              onSubmit={handleSubmit}
+              aria-labelledby="transport-form-title"
+              margin="20px"
+            >
+              <p id="transport-form-title">You can view different public transport options here. </p>
+                <p> Please indicate the bus or train station where you would like to start your journey.</p>
+
+              {/* Name Input */}
+              <FormGroup className="form-group">
                 <TextInput
-                type="text"
-                id="startingPoint"
-                name="startingPoint"
-                value={formData.startingPoint}
-                onChange={handleChange}
-                required
-                aria-required="true"
-            />
-            </Tile>
-
-            <Tile className="form-group">
-                <label htmlFor="name">Name</label>
-                <TextInput
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    aria-required="true"
+                  id="startingPoint"
+                  name="startingPoint"
+                  labelText="Starting Point"
+                  placeholder="Enter where you would like to start your journey"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  aria-required="true"
                 />
-            </Tile>
+              </FormGroup>
 
+            <FormGroup className="datepicker-group">
+              <DatePicker className ="datepicker" datePickerType="range">
+                    <DatePickerInput  className= "datepicker-input" id="date-picker-input-id-start"  placeholder="mm/dd/yyyy" labelText="Start date" size="md" />
+                    <DatePickerInput className= "datepicker-input" id="date-picker-input-id-finish" placeholder="mm/dd/yyyy" labelText="End date" size="md" />
+              </DatePicker>
+            </FormGroup>
 
-            <Tile className="form-group">
-                <label htmlFor="cardNumber">Card Number</label>
-                <TextInput
-                    type="text"
-                    id="cardNumber"
-                    name="cardNumber"
-                    value={formData.cardNumber}
-                    onChange={handleChange}
-                    maxLength="16"
-                    pattern="\d{16}"
-                    title="Card number must be 16 digits"
-                    required
-                    aria-required="true"
-                    aria-describedby="cardHelp"
-                />
-                <small id="cardHelp" className="warning">
-                    Enter a 16-digit card number.
-                </small>
-            </Tile>
-
-            <Tile className="form-row">
-                <Tile className="form-group">
-                    <label htmlFor="expiry">Expiry Date</label>
-                    <TextInput
-                    type="text"
-                    id="expiry"
-                    name="expiry"
-                    value={formData.expiry}
-                    onChange={handleChange}
-                    pattern="\d{2}/\d{2}"
-                    title="Expiry date must be in MM/YY format"
-                    placeholder="MM/YY"
-                    required
-                    aria-required="true"
-                    />
-                </Tile>
-
-                <Tile className="form-group">
-                    <label htmlFor="cvv">CVV</label>
-                    <TextInput
-                    type="text"
-                    id="cvv"
-                    name="cvv"
-                    value={formData.cvv}
-                    onChange={handleChange}
-                    maxLength="3"
-                    pattern="\d{3}"
-                    title="CVV must be 3 digits"
-                    required
-                    aria-required="true"
-                    />
-                </Tile>
-        </Tile>
-
-        <Button kind="primary" aria-label = {"Purchase Transport Ticket"} className="submit-button">
-          Purchase Transport Ticket
-        </Button>
-      </form>
-    </Tile>
-      )
-}
+              {/* Submit Button */}
+              <Button
+                type="submit"
+                kind="primary"
+                aria-label="submitButton"
+                className="buttonTransport"
+              >
+                Show Transport Options
+              </Button>
+            </Form>
+          </Column>
+        </Grid>
+      </main>
+    </div>
+  );
+};
 
 export default TransportPage;
