@@ -74,7 +74,6 @@ const TransportPage = () => {
               <p id="transport-form-title">You can view different public transport options here. </p>
                 <p> Please indicate the bus or train station where you would like to start your journey.</p>
 
-              {/* Name Input */}
               <FormGroup className="form-group">
                 <TextInput
                   id="startingPoint"
@@ -83,15 +82,13 @@ const TransportPage = () => {
                   placeholder="Enter where you would like to start your journey"
                   value={formData.name}
                   onChange={handleChange}
-                  required
-                  aria-required="true"
                 />
               </FormGroup>
 
             <FormGroup className="datepicker-group">
-              <DatePicker className ="datepicker" datePickerType="range">
-                    <DatePickerInput  className= "datepicker-input" id="date-picker-input-id-start"  placeholder="mm/dd/yyyy" labelText="Start date" size="md" />
-                    <DatePickerInput className= "datepicker-input" id="date-picker-input-id-finish" placeholder="mm/dd/yyyy" labelText="End date" size="md" />
+              <DatePicker className ="datepicker" dateFormat='d/m/Y' datePickerType="range">
+                    <DatePickerInput  className= "datepicker-input" id="date-picker-input-id-start" placeholder="dd/mm/yyyy" labelText="Start date" size="md" />
+                    <DatePickerInput className= "datepicker-input" id="date-picker-input-id-finish" placeholder="dd/mm/yyyy" labelText="End date" size="md" />
               </DatePicker>
             </FormGroup>
 
