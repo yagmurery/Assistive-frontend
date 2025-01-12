@@ -63,7 +63,7 @@ label {
 /* Form Inputs */
 input,
 textarea{
-  width: 90%; /* Full-width for accessibility */
+  width: 90%; 
   padding: 10px;
   font-size: 1.2rem;
   border: 2px solid #cccccc; /* Thicker border for visibility */
@@ -96,5 +96,29 @@ button:focus {
   background-color: #004299; /* Darker blue for hover/focus */
   outline: 2px solid #ffcc00; /* High-contrast focus indicator */
 }
+
+.table-transport {
+  width: 80%;              
+  margin: 0 auto;           
+  border-collapse: collapse;
+  table-layout:fixed;
+}
+
+.tablecell {
+  border: 1px solid black; 
+  padding: 20px;            
+  text-align: center; 
+  width: 24%;
+}
+
+.tableheader{
+  font-weight: bold;
+  border: 1px solid black; 
+  padding: 8px;            
+  text-align: center; 
+  word-wrap: break-word;
+}
+
+
 
 

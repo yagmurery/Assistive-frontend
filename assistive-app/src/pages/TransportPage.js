@@ -101,6 +101,7 @@ const TransportPage = () => {
                 kind="primary"
                 aria-label="submitButton"
                 className="buttonTransport"
+                href="/transportresults"
               >
                 Show Transport Options
               </Button>

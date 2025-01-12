@@ -6,6 +6,9 @@ import "carbon-components/css/carbon-components.min.css"; // Carbon CSS
 import "./App.css"; // Your custom styles
 import ContactPage from "./pages/ContactPage";
 import TransportPage from "./pages/TransportPage";
+import TransportResultsPage from "./pages/TransportResultsPage";
+
+
 function App() {
   return (
     <Router>
@@ -17,6 +20,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/ticket" element={<PurchasePage />} />
           <Route path="/transport" element={<TransportPage/>} />
+          <Route path="/transportresults" element ={<TransportResultsPage/>}/>
         </Routes>
       </div>
     </Router>
