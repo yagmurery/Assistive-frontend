@@ -8,10 +8,8 @@ import {
   Grid,
   DatePicker,
   DatePickerInput,
-  Row
 } from "carbon-components-react";
 import "../css/TransportPage.css";
-
 
 const TransportPage = () => {
   const [formData, setFormData] = useState({
@@ -41,7 +39,7 @@ const TransportPage = () => {
               margin="20px"
             >
               <p id="transport-form-title">You can view different public transport options here. </p>
-                <p> Please indicate the bus or train station where you would like to start your journey.</p>
+              <p> Please indicate the bus or train station where you would like to start your journey.</p>
 
               <FormGroup className="form-group">
                 <TextInput
@@ -51,6 +49,7 @@ const TransportPage = () => {
                   placeholder="Enter where you would like to start your journey"
                   value={formData.name}
                   onChange={handleChange}
+                  className = "startinput"
                 />
               </FormGroup>
 
@@ -62,7 +61,8 @@ const TransportPage = () => {
             </FormGroup>
 
               {/* Submit Button */}
-              <Button
+              <FormGroup className = "form-group">
+                <Button
                 type="submit"
                 kind="primary"
                 aria-label="submitButton"
@@ -71,6 +71,8 @@ const TransportPage = () => {
               >
                 Show Transport Options
               </Button>
+              </FormGroup>
+              
             </Form>
           </Column>
         </Grid>

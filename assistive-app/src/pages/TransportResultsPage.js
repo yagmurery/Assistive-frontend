@@ -11,17 +11,9 @@ import {
   TableBody,
   TableCell
 } from "carbon-components-react";
+import "../css/TransportPage.css";
 
 const TransportResultsPage = () => {
-  const [formData, setFormData] = useState({
-    startingPoint: "",
-  });
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
-  };
 
   const rows = [{
     id: 'travel-option-1',
@@ -32,7 +24,7 @@ const TransportResultsPage = () => {
     buy: <Button type="submit"
     kind="primary"
     aria-label="buyButton"
-    className="buttonTransport"
+    className="buttonBuy"
     href= "/ticket">Buy</Button>
   }, {
     id: 'travel-option-2',
@@ -43,7 +35,7 @@ const TransportResultsPage = () => {
     buy: <Button type="submit"
     kind="primary"
     aria-label="buyButton"
-    className="buttonTransport"
+    className="buttonBuy"
     href= "/ticket">Buy</Button>
   }, {
     id: 'travel-option-3',
@@ -54,7 +46,7 @@ const TransportResultsPage = () => {
     buy: <Button type="submit"
     kind="primary"
     aria-label="buyButton"
-    className="buttonTransport"
+    className="buttonBuy"
     href= "/ticket">Buy</Button>
   }];
 
@@ -66,13 +58,7 @@ const TransportResultsPage = () => {
         <h1>Travel Options</h1>
         <Grid>
           <Column>
-            <Form
-              onSubmit={handleSubmit}
-              aria-labelledby="transport-form-title"
-              margin="20px"
-            >
               <p id="transport-form-title">You can view different public transport options here. </p>
-
                 <Table size="lg" useZebraStyles={false} aria-label="transport options table" className="transport-table">
                     <TableHead>
                         <TableRow>
@@ -88,8 +74,7 @@ const TransportResultsPage = () => {
                         })}
                         </TableRow>)}
                     </TableBody>
-                    </Table>
-            </Form>
+                  </Table>
           </Column>
         </Grid>
       </main>
