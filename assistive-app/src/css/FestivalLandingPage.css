@@ -1,46 +1,14 @@
-/* Navigation Bar */
-.navigation-bar {
-  background: #f4f4f4; /* Light gray for contrast */
-  padding: 1rem;
-  border-bottom: 2px solid #cccccc; /* Add subtle border for clarity */
-}
-
-.navigation-list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navigation-list li {
-  margin-right: 1rem;
-}
-
-/* Navigation Links */
-.navigation-list a {
-  text-decoration: none;
-  color: #005fcc; /* Accessible blue */
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.navigation-list a:hover,
-.navigation-list a:focus {
-  color: #004299; /* Darker blue for hover and focus */
-  outline: 2px solid #004299; /* Yellow outline for focus state */
-  border-radius: 3px; /* Adds clarity for outline */
-}
-
-/* Main Content */
 .main-content {
   padding: 2rem;
-  line-height: 1.6; /* Improve readability */
+  margin-left: 64px;
+  margin-right: 64px;
+  line-height: 1.6;
   color: #333333;
-  background-color: #ffffff; /* Clean, high-contrast background */
+  background-color: #ffffff;
 }
 
 .festival-image:focus {
-  outline: 1px solid #005fcc; /* High-contrast focus outline */
+  outline: 1px solid #005fcc;
 }
 
 button {
@@ -49,86 +17,84 @@ button {
   border-radius: 20%;
 }
 
-/* Tile Component */
-
 .festival-tile {
-  padding: 1rem; /* Reduce padding for a smaller height */
-  max-width: 800px; /* Limit the width */
-  max-height: auto; /* Smaller height */
+  padding: 1rem; 
+  max-width: 800px; 
+  max-height: auto; 
   align-content: center;
-  background-color: #ffffff; /* White background for the tile */
-  border: 1px solid #cccccc; /* Light gray border */
-  border-radius: 8px; /* Rounded corners */
-  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
-  margin: 0 auto; /* Center within its container */
-  display: flex; /* Make the tile a flexbox */
-  flex-direction: column; /* Align items vertically */
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  background-color: #ffffff; 
+  border: 1px solid #cccccc; 
+  border-radius: 8px; 
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
   margin-top: 20px;
 }
 
 .festival-tile:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
-  transform: translateY(-4px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-4px); 
   outline: 5px solid #005fcc; /* High-contrast focus outline */
 }
 
 .festival-tile:focus-within {
-  outline: 2px solid #ffcc00; /* Yellow focus outline for accessibility */
-  outline-offset: 4px; /* Space between the outline and tile */
+  outline: 2px solid #ffcc00; 
+  outline-offset: 4px; 
 }
 
-/* Tile Content */
+
 .festival-image {
-  width: 100%; /* Image should adjust based on content */
-  max-width: 100%; /* Limit size for responsiveness */
-  height: 400px; /* Smaller height */
-  object-fit: contain; /* Maintain image proportions */
+  width: 100%; 
+  max-width: 100%; 
+  height: 400px; 
+  object-fit: contain; 
   border-radius: 8px; /* Match tile's corner radius */
 }
 
 .festival-name {
   font-size: 1.7rem;
   font-weight: bold;
-  color: #0f62fe; /* Accessible blue color */
+  color: #0f62fe; 
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 
 .festival-description {
   font-size: 1.5rem;
-  color: #333333; /* Readable text color */
-  line-height: 1.5; /* Comfortable reading */
+  color: #333333; 
+  line-height: 1.5; 
   margin-bottom: 1rem;
 }
 
-/* Action Button */
+
 .festival-tile .bx--btn {
-  margin-top: 20px; /* Space above the button */
+  margin-top: 20px; 
 }
 
-/* Grid Layout Adjustments */
+
 .festival-tile .bx--grid {
-  row-gap: 1rem; /* Add spacing between rows in the grid */
+  row-gap: 1rem; 
 }
 
 .festival-tile .bx--col {
-  padding: 0; /* Remove unnecessary padding within the grid */
+  padding: 0; 
 }
 
 .learn-more-btn {
-  font-size: 1.5rem; /* Make the link text larger */
-  color: #0f62fe; /* IBM accessible blue */
+  font-size: 1.5rem; 
+  color: #0f62fe; 
 }
 
 .festival-container {
   display: flex;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  height: 100vh; /* Full viewport height */
-  background-color: #f5f5f5; /* Optional background for contrast */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #f5f5f5; 
 }
 
 .flex-container {

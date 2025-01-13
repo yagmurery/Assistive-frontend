@@ -1,5 +1,6 @@
 // PurchasePage.js
 import React, { useState } from "react";
+import { Button } from "carbon-components-react";
 import "../css/PurchasePage.css";
 
 const PurchasePage = () => {
@@ -92,9 +93,9 @@ const PurchasePage = () => {
           </div>
         </div>
 
-        <button type="submit" className="submit-button">
+        <Button type="submit" className="submit-button">
           Complete Purchase
-        </button>
+        </Button>
       </form>
     </div>
   );
