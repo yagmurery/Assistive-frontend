@@ -1,7 +1,4 @@
 #content {
-  padding: 2rem;
-  margin-left: 64px;
-  margin-right: 64px;
   font-size: 1rem;
   line-height: 1.6; 
   text-align: left;
@@ -15,35 +12,9 @@ ol {
 }
 
 
-.festival-tile .bx--btn {
-  margin-top: 20px; 
-}
-
-
-.festival-tile .bx--grid {
-  row-gap: 1rem; 
-}
-
-.festival-tile .bx--col {
-  padding: 0; 
-}
-
-.learn-more-btn {
-  font-size: 1.5rem; 
-  color: #0f62fe; 
-}
-
-.festival-container {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
-  background-color: #f5f5f5; 
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+#img {
+  margin-top: 2%;
+  width: 50%;
+  min-width: 200px;
+  object-fit: contain;
 }

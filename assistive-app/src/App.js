@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, useParams } from "react-router-dom";
 import FestivalLandingPage from "./pages/FestivalLandingpage";
 import PurchasePage from "./pages/PurchasingPage";
-import "carbon-components/css/carbon-components.min.css"; // Carbon CSS
+import "carbon-components/css/carbon-components.min.css";
 import "./App.css"; // Your custom styles
 import ContactPage from "./pages/ContactPage";
 import FestivalInfo from "./components/FestivalInfo";

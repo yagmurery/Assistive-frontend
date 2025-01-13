@@ -1,26 +1,26 @@
 import React from "react";
 import { 
-  Button,
   ListItem,
   OrderedList,
   UnorderedList,
+  Link,
  } from "carbon-components-react";
 import "../css/FestivalInfo.css";
 import PropTypes from 'prop-types';
 
 
 
+
 const FestivalInfo = ({ festival }) => {
   return (
     <div>
+      <main id="content">
       <header id="content">
         <h1>{festival.title}</h1>
         <h2>{festival.subtitle}</h2>
         <h3>{festival.dates} - {festival.place}</h3>
+        <img id="img" src={require ("../assets/" + festival.image)} alt={`${festival.title}`} />
       </header>
-      <img src={require ("../assets/" + festival.image)} alt={`${festival.title}`} />
-
-      <main id="content">
         <section aria-labelledby="event-information">
           <h2 id="event-information">Event information</h2>
           <h3>Lineup</h3>
@@ -47,16 +47,28 @@ const FestivalInfo = ({ festival }) => {
         <section aria-labelledby="tickets-heading">
           <h2 id="tickets-heading">Tickets Options</h2>
           <UnorderedList>
-          
-          </UnorderedList>{festival.tickets.map((ticket, index) => (
+          {festival.tickets.map((ticket, index) => (
             <ListItem key={`ticket-${index}`}>{ticket}</ListItem> ))}
-          <a href={festival.purchaseLink} aria-label="Purchase Tickets">Purchase Tickets</a>
+          </UnorderedList>
+          <Link 
+          href={festival.purchaseLink} 
+          aria-label="Purchase Tickets"
+          class="link"
+          >
+            Purchase Tickets
+          </Link>
         </section>
         
         <section aria-labelledby="transportation-heading">
           <h2 id="transportation-heading">Transportation Info</h2>
           <p>{festival.transportationInfo}</p>
-          <a href={festival.transportationLink} aria-label="Get Transportation Info">Get Transportation Info</a>
+          <Link 
+          href={festival.transportationLink}
+          aria-label="Get Transportation Info"
+          className="link"
+          >
+            Get Transportation Info
+          </Link>
         </section>      
       </main>
 

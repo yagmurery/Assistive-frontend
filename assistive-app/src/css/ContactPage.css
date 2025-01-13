@@ -2,7 +2,6 @@
   padding: 20px;
   margin-left: 64px;
   margin-right: 64px;
-  background-color: #f9f9f9;
   color: #333333;
   line-height: 1.6;
 }
@@ -28,7 +27,6 @@ h2 {
   color: #444444;
 }
 
-/* Form Group */
 .form-group {
   margin-bottom: 25px;
 }
@@ -41,7 +39,6 @@ label {
   margin-bottom: 5px;
 }
 
-/* Form Inputs */
 input,
 textarea {
   width: 100%;
@@ -55,16 +52,15 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 2px solid #005fcc;
-  border-color: #005fcc;
+  outline: 2px solid #004CA3;
+  border-color: #004CA3;
 }
 
-/* Buttons */
 .buttonContact {
   padding: 10px 20px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
-  background-color: #005fcc;
+  background-color: #004CA3;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -74,18 +70,18 @@ textarea:focus {
 
 button:hover,
 button:focus {
-  background-color: #004299;
+  background-color: #004CA3;
   outline: 2px solid #ffcc00;
 }
 
-/* Accessibility for Links */
 a {
-  color: #005fcc;
+  color: #004CA3;
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: #004299;
-  outline: 2px solid #ffcc00;
+  color: #004CA3;
+  background-color: #fff;
+  outline: 2px solid #004CA3;
 }

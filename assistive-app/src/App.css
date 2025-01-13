@@ -1,11 +1,14 @@
 .App {
   text-align: left;
+  font-size: 1.1rem;
+  color: #333333;
 }
 
 /* Navigation Bar */
 .navigation-bar {
   background: #f4f4f4; /* Light gray for contrast */
   padding: 1rem;
+  padding-left: 3%;
   border-bottom: 2px solid #cccccc; /* Add subtle border for clarity */
 }
 
@@ -17,20 +20,37 @@
 }
 
 .navigation-list li {
-  margin-right: 1rem;
+  margin-right: 2rem;
+  padding: 1rem;
 }
 
-/* Navigation Links */
 .navigation-list a {
+  color: #004CA3;
   text-decoration: none;
-  color: #005fcc; /* Accessible blue */
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .navigation-list a:hover,
 .navigation-list a:focus {
-  color: #004299; /* Darker blue for hover and focus */
-  outline: 2px solid #004299; /* Yellow outline for focus state */
-  border-radius: 3px; /* Adds clarity for outline */
+  color: #004CA3;
+  outline: 2px solid #004CA3;
+  border-radius: 3px;
+}
+
+main {
+  padding: 2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.link {
+  font-size: 1.2rem;
+  color: #004CA3;
 }

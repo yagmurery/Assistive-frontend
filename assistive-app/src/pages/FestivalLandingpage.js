@@ -67,15 +67,15 @@ const FestivalLandingPage = () => {
 
                     {/* Action Button */}
                     <div style={{ marginTop: "20px" }}>
-                      <Button
+                      <Link
                         kind="primary"
                         as={Link}
                         to={festival.link}
                         aria-label={`More about ${festival.name}`}
-                        className="learn-more-btn"
+                        className="link"
                       >
                         Learn More
-                      </Button>
+                      </Link>
                     </div>
                   </Tile>
                 </div>

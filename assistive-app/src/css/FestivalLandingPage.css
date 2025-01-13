@@ -3,46 +3,42 @@
   margin-left: 64px;
   margin-right: 64px;
   line-height: 1.6;
-  color: #333333;
   background-color: #ffffff;
 }
 
 .festival-image:focus {
-  outline: 1px solid #005fcc;
-}
-
-button {
-  margin: 20px;
-  background-color: #edf0f3;
-  border-radius: 20%;
+  outline: 1px solid #004CA3;
 }
 
 .festival-tile {
   padding: 1rem; 
-  max-width: 800px; 
+  max-width: 800px;
+  min-width:200px;
   max-height: auto; 
   align-content: center;
   background-color: #ffffff; 
-  border: 1px solid #cccccc; 
+  border: 2px solid #cccccc; 
   border-radius: 8px; 
   transition: box-shadow 0.3s ease, transform 0.3s ease; 
   margin: 0 auto; 
+  margin-top: 20px;
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-  margin-top: 20px;
 }
 
 .festival-tile:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transform: translateY(-4px); 
-  outline: 5px solid #005fcc; /* High-contrast focus outline */
+  outline: 5px solid #004CA3;
+  background-color: #ffffff;
+  color: #004CA3;
 }
 
 .festival-tile:focus-within {
-  outline: 2px solid #ffcc00; 
+  outline: 2px solid #004CA3; 
   outline-offset: 4px; 
 }
 
@@ -52,13 +48,13 @@ button {
   max-width: 100%; 
   height: 400px; 
   object-fit: contain; 
-  border-radius: 8px; /* Match tile's corner radius */
+  border-radius: 8px;
 }
 
 .festival-name {
   font-size: 1.7rem;
   font-weight: bold;
-  color: #0f62fe; 
+  color: #004CA3; 
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
@@ -84,17 +80,14 @@ button {
   padding: 0; 
 }
 
-.learn-more-btn {
-  font-size: 1.5rem; 
-  color: #0f62fe; 
-}
+
 
 .festival-container {
   display: flex;
   justify-content: center; 
   align-items: center; 
   height: 100vh; 
-  background-color: #f5f5f5; 
+  background-color: #f4f4f4; 
 }
 
 .flex-container {

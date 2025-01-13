@@ -94,7 +94,7 @@ const PurchasePage = () => {
           </FormGroup>
 
           <Button type="submit" className="buttonPurchase">
-            Complete Purchase
+            Pay now
           </Button>
         </Form>
     </main>

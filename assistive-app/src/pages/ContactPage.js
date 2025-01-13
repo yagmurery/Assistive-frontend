@@ -8,6 +8,7 @@ import {
   Column,
   Grid,
 } from "carbon-components-react";
+import { Link } from "react-router-dom";
 import "../css/ContactPage.css";
 
 const ContactPage = () => {
@@ -24,8 +25,6 @@ const ContactPage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
   };
 
   return (
@@ -41,7 +40,6 @@ const ContactPage = () => {
             >
               <h2 id="contact-form-title">Get in Touch</h2>
 
-              {/* Name Input */}
               <FormGroup className="form-group">
                 <TextInput
                   id="name"
@@ -55,7 +53,6 @@ const ContactPage = () => {
                 />
               </FormGroup>
 
-              {/* Email Input */}
               <FormGroup className="form-group">
                 <TextInput
                   id="email"
@@ -70,7 +67,6 @@ const ContactPage = () => {
                 />
               </FormGroup>
 
-              {/* Message Textarea */}
               <div margin="20px">
                 <FormGroup className="form-group">
                   <TextArea
@@ -86,10 +82,11 @@ const ContactPage = () => {
                 </FormGroup>
               </div>
 
-              {/* Submit Button */}
               <Button
                 type="submit"
                 kind="primary"
+                as={Link}
+                to={"/ticket"}
                 aria-label="submitButton"
                 className="buttonContact"
               >
