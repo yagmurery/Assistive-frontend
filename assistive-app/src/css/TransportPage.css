@@ -1,4 +1,6 @@
 .transport-page {
+  margin-left: 64px;
+  margin-right: 64px;
   padding: 20px;
   background-color: #ffffff; /* Light background for good contrast */
   color: #333333; /* Dark text for readability */
@@ -13,9 +15,6 @@ h1{
   font-weight: bold; /* Ensure headings are distinguishable */
   margin-bottom: 20px;
   margin-top: 20px;
-  
-
-
 }
 
 /* H1: Main Page Title */

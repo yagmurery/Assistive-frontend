@@ -9,6 +9,10 @@
 
 }
 
+ol {
+  list-style-type: decimal;
+}
+
 /* Action Button */
 .festival-tile .bx--btn {
   margin-top: 20px; /* Space above the button */

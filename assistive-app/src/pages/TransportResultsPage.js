@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import {
-  TextInput,
   Button,
   Form,
-  FormGroup,
   Column,
   Grid,
-  DatePicker,
-  DatePickerInput,
   Table,
   TableHead,
   TableRow,
@@ -15,17 +11,11 @@ import {
   TableBody,
   TableCell
 } from "carbon-components-react";
-import styles from "../css/TransportPage.css";
 
 const TransportResultsPage = () => {
   const [formData, setFormData] = useState({
     startingPoint: "",
   });
-
-  const handleChange = (event) => {
-    const { startingPoint, value } = event.target;
-    setFormData({ ...formData, [startingPoint]: value });
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -72,38 +62,6 @@ const TransportResultsPage = () => {
 
   return (
     <div>
-      {/* Navigation Bar */}
-      <nav aria-label="Main navigation" className="navigation-bar">
-        <ul className="navigation-list">
-          <li>
-            <Button kind="secondary" as="a" href="/home" aria-label="Home page">
-              Home
-            </Button>
-          </li>
-          <li>
-            <Button
-              kind="secondary"
-              as="a"
-              href="/about"
-              aria-label="About page"
-              margin="100px"
-            >
-              About
-            </Button>
-          </li>
-          <li>
-            <Button
-              kind="secondary"
-              as="a"
-              href="/contact"
-              aria-label="Contact page"
-            >
-              Contact
-            </Button>
-          </li>
-        </ul>
-      </nav>
-
       <main role="main" className="transport-page">
         <h1>Travel Options</h1>
         <Grid>

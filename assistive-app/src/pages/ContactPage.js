@@ -31,38 +31,6 @@ const ContactPage = () => {
 
   return (
     <div>
-      {/* Navigation Bar */}
-      <nav aria-label="Main navigation" className="navigation-bar">
-        <ul className="navigation-list">
-          <li>
-            <Button kind="secondary" as="a" href="/home" aria-label="Home page">
-              Home
-            </Button>
-          </li>
-          <li>
-            <Button
-              kind="secondary"
-              as="a"
-              href="/about"
-              aria-label="About page"
-              margin="100px"
-            >
-              About
-            </Button>
-          </li>
-          <li>
-            <Button
-              kind="secondary"
-              as="a"
-              href="/contact"
-              aria-label="Contact page"
-            >
-              Contact
-            </Button>
-          </li>
-        </ul>
-      </nav>
-
       <main role="main" className="contact-page">
         <h1>Contact Us</h1>
         <Grid>

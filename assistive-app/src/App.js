@@ -5,10 +5,11 @@ import PurchasePage from "./pages/PurchasingPage";
 import "carbon-components/css/carbon-components.min.css"; // Carbon CSS
 import "./App.css"; // Your custom styles
 import ContactPage from "./pages/ContactPage";
-import FestivalInfo from "./pages/FestivalInfo";
+import FestivalInfo from "./components/FestivalInfo";
 import festivals from './festivalData.json';
 import TransportPage from "./pages/TransportPage";
 import TransportResultsPage from "./pages/TransportResultsPage";
+import NavigationBar from './components/NavigationBar'
 
 
 const FestivalPage = () => {
@@ -26,6 +27,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <NavigationBar />
         <Routes>
           <Route path="/" element={<FestivalLandingPage />} />{" "}
           {/* Default route */}

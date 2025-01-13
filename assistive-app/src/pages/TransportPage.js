@@ -10,7 +10,8 @@ import {
   DatePickerInput,
   Row
 } from "carbon-components-react";
-import styles from "../css/TransportPage.css";
+import "../css/TransportPage.css";
+
 
 const TransportPage = () => {
   const [formData, setFormData] = useState({
@@ -30,38 +31,6 @@ const TransportPage = () => {
 
   return (
     <div>
-      {/* Navigation Bar */}
-      <nav aria-label="Main navigation" className="navigation-bar">
-        <ul className="navigation-list">
-          <li>
-            <Button kind="secondary" as="a" href="/home" aria-label="Home page">
-              Home
-            </Button>
-          </li>
-          <li>
-            <Button
-              kind="secondary"
-              as="a"
-              href="/about"
-              aria-label="About page"
-              margin="100px"
-            >
-              About
-            </Button>
-          </li>
-          <li>
-            <Button
-              kind="secondary"
-              as="a"
-              href="/contact"
-              aria-label="Contact page"
-            >
-              Contact
-            </Button>
-          </li>
-        </ul>
-      </nav>
-
       <main role="main" className="transport-page">
         <h1>Travel Options</h1>
         <Grid>

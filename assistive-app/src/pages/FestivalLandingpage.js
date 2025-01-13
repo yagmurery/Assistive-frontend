@@ -36,39 +36,6 @@ const festivals = [
 const FestivalLandingPage = () => {
   return (
     <div>
-      {/* Navigation Bar */}
-      <nav aria-label="Main navigation" className="navigation-bar">
-        <ul className="navigation-list">
-          <li>
-            <Button kind="secondary" as="a" href="/home" aria-label="Home page">
-              Home
-            </Button>
-          </li>
-          <li>
-            <Button
-              kind="secondary"
-              as="a"
-              href="/about"
-              aria-label="About page"
-              margin="100px"
-            >
-              About
-            </Button>
-          </li>
-          <li>
-            <Button
-              kind="secondary"
-              as="a"
-              href="/contact"
-              aria-label="Contact page"
-            >
-              Contact
-            </Button>
-          </li>
-        </ul>
-      </nav>
-
-      {/* Page Content */}
       <main className="main-content">
         <h1 style={{ margin: "20px" }}>Music Festivals 2025</h1>
         <div aria-label="Festival list">
