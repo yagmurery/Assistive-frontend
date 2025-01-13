@@ -7,6 +7,9 @@ import "./App.css"; // Your custom styles
 import ContactPage from "./pages/ContactPage";
 import FestivalInfo from "./pages/FestivalInfo";
 import festivals from './festivalData.json';
+import TransportPage from "./pages/TransportPage";
+import TransportResultsPage from "./pages/TransportResultsPage";
+
 
 const FestivalPage = () => {
   const { id } = useParams();
@@ -30,6 +33,8 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/ticket" element={<PurchasePage />} />
           <Route path="/:id" element={<FestivalPage />} />
+          <Route path="/transport" element={<TransportPage/>} />
+          <Route path="/transportresults" element ={<TransportResultsPage/>}/>
         </Routes>
       </div>
     </Router>
