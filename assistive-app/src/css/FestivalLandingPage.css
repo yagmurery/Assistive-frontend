@@ -27,7 +27,7 @@
 .navigation-list a:hover,
 .navigation-list a:focus {
   color: #004299; /* Darker blue for hover and focus */
-  outline: 2px solid #ffcc00; /* Yellow outline for focus state */
+  outline: 2px solid #004299; /* Yellow outline for focus state */
   border-radius: 3px; /* Adds clarity for outline */
 }
 

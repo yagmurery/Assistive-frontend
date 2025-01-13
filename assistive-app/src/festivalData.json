@@ -1,0 +1,56 @@
+[    
+    {
+        "id": "sziget",
+        "title": "Sziget Festival",
+        "subtitle": "The island of freedom",
+        "dates": "6-11 August 2025",
+        "place": "Budapest, Hungary",
+        "image": "festival1.jpg",
+        "lineup": ["ARTIST 1", "Artist 2", "Artist 3"],
+        "sideEvents": ["Event 1", "Event 2", "Event 3"],
+        "accessibilityInfo": ["Info 1", "Info 2", "Info 3"],
+        "tickets": [
+        { "type": "General Admission", "price": "$100" },
+        { "type": "VIP", "price": "$200" }
+        ],
+        "purchaseLink": "http://example.com/purchase",
+        "transportationInfo": "You can get transportation info and buy tickets here.",
+        "transportationLink": "http://example.com/transportation"
+    },
+    {
+        "id": "tomorrowland",
+        "title": "Dreamland Festival",
+        "subtitle": "The island of freedom",
+        "dates": "6-11 August 2025",
+        "place": "Budapest, Hungary",
+        "image": "festival2.jpg",
+        "lineup": ["ARTIST 1", "Artist 2", "Artist 3"],
+        "sideEvents": ["Event 1", "Event 2", "Event 3"],
+        "accessibilityInfo": ["Info 1", "Info 2", "Info 3"],
+        "tickets": [
+        { "type": "General Admission", "price": "$100" },
+        { "type": "VIP", "price": "$200" }
+        ],
+        "purchaseLink": "http://example.com/purchase",
+        "transportationInfo": "You can get transportation info and buy tickets here.",
+        "transportationLink": "http://example.com/transportation"
+    },
+    {
+        "id": "mysteryland",
+        "title": "Tomorrowland",
+        "subtitle": "The island of freedom",
+        "dates": "6-11 August 2025",
+        "place": "Budapest, Hungary",
+        "image": "festival3.jpg",
+        "lineup": ["ARTIST 1", "Artist 2", "Artist 3"],
+        "sideEvents": ["Event 1", "Event 2", "Event 3"],
+        "accessibilityInfo": ["Info 1", "Info 2", "Info 3"],
+        "tickets": [
+        { "type": "General Admission", "price": "$100" },
+        { "type": "VIP", "price": "$200" }
+        ],
+        "purchaseLink": "http://example.com/purchase",
+        "transportationInfo": "You can get transportation info and buy tickets here.",
+        "transportationLink": "http://example.com/transportation"
+    }
+]

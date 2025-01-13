@@ -1,7 +1,5 @@
 import React from "react";
 import {
-  Accordion,
-  AccordionItem,
   Tile,
   Button,
   Grid,
@@ -17,21 +15,21 @@ const festivals = [
     name: "Sziget",
     description: "A grand celebration of music from various genres.",
     image: require("../assets/festival1.jpg"), // Use `require` for dynamic imports
-    link: "/festivals/sziget",
+    link: "/sziget",
   },
   {
     id: 2,
     name: "Tomorrowland",
     description: "An exhibition showcasing music and diverse art forms.",
     image: require("../assets/festival2.jpg"), // Use `require` for dynamic imports
-    link: "/festivals/tomorrowland",
+    link: "/tomorrowland",
   },
   {
     id: 3,
     name: "Mysteryland",
     description: "A mystic experience.",
     image: require("../assets/festival3.jpg"), // Use `require` for dynamic imports
-    link: "/festivals/mysteryland",
+    link: "/mysteryland",
   },
 ];
 
@@ -85,7 +83,7 @@ const FestivalLandingPage = () => {
                         <Column sm={4} md={6} lg={6}>
                           <img
                             src={festival.image}
-                            alt={`Image of ${festival.name}`}
+                            alt={`${festival.name}`}
                             className="festival-image"
                           />
                         </Column>
