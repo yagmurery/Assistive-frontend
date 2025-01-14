@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Link,
-  Column,
-  Grid,
   Table,
   TableHead,
   TableRow,
@@ -15,6 +13,7 @@ import {
 import "../css/TransportPage.css";
 
 const TransportResultsPage = () => {
+  document.title = "Travel information";
 
   const rows = [{
     id: 'travel-option-1',
@@ -33,7 +32,7 @@ const TransportResultsPage = () => {
     Name: 'Travel Option 3',
     departure: '11:45',
     arrival: '14:04',
-    cost: '34',
+    cost: '34€',
   }];
 
   const headers = ['Name', 'Departure', 'Arrival', 'Cost', 'Buy'];
@@ -41,8 +40,8 @@ const TransportResultsPage = () => {
   return (
     <div>
       <main role="main" className="transport-page">
-        <h1>Travel Options</h1>
-            <div id="transport-form-title">You can view different public transport options here. </div>
+        <h1>Travel options</h1>
+            <div id="transport-form-title" style={{fontSize: 'max(1.2em, 16px)', marginBottom: '2%'}}>You can view different travel options in the table. </div>
               
             {/* Table - default display */}
             <Table size="lg" useZebraStyles={false} aria-label="transport options table" className="transport-table">
@@ -58,7 +57,7 @@ const TransportResultsPage = () => {
                         {Object.keys(row).filter(key => key !== 'id').map(key => {
                     return <TableCell className="tablecell" key={key}>{row[key]}</TableCell>;
                     })}
-                    <TableCell className="tablecell"> <Link href="/ticket">Go to purchase page</Link> </TableCell>
+                    <TableCell className="tablecell"> <Link href="/ticket">Buy this travel option</Link> </TableCell>
                     </TableRow>)}
                 </TableBody>
               </Table>
@@ -70,7 +69,7 @@ const TransportResultsPage = () => {
                   <span>Departure: {row.departure}</span><br />
                   <span>Arrival: {row.arrival}</span><br />
                   <span>Cost: {row.cost}</span><br />
-                  <Link href="/ticket">Go to purchase page</Link>
+                  <Link href="/ticket">Buy this travel option</Link>
                 </ListItem>
               ))}
             </OrderedList>

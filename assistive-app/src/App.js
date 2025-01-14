@@ -10,7 +10,7 @@ import festivals from './festivalData.json';
 import TransportPage from "./pages/TransportPage";
 import TransportResultsPage from "./pages/TransportResultsPage";
 import NavigationBar from './components/NavigationBar'
-import About from "./pages/About";
+import AboutUs from "./pages/AboutUs";
 
 
 const FestivalPage = () => {
@@ -18,7 +18,7 @@ const FestivalPage = () => {
   const festival = festivals.find(festival => festival.id === id);
 
   if (!festival) {
-    return <h2>Festival not found</h2>;
+    return <h2> !!!Element not found!!!</h2>;
   }
 
   return <FestivalInfo festival={festival} />;
@@ -31,14 +31,13 @@ function App() {
         <NavigationBar />
         <Routes>
           <Route path="/" element={<FestivalLandingPage />} />{" "}
-          {/* Default route */}
           <Route path="/home" element={<FestivalLandingPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/ticket" element={<PurchasePage />} />
+          <Route path="/contactus" element={<ContactPage />} />
+          <Route path="/purchasetickets" element={<PurchasePage />} />
           <Route path="/:id" element={<FestivalPage />} />
-          <Route path="/transport" element={<TransportPage/>} />
-          <Route path="/transportresults" element ={<TransportResultsPage/>}/>
-          <Route path="/about" element={<About />} />
+          <Route path="/traveloptions" element={<TransportPage/>} />
+          <Route path="/traveloptionsresults" element ={<TransportResultsPage/>}/>
+          <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
       </div>
     </Router>

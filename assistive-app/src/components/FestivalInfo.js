@@ -12,6 +12,8 @@ import PropTypes from 'prop-types';
 
 
 const FestivalInfo = ({ festival }) => {
+  document.title = festival.title;
+
   return (
     <div>
       <main id="content">
@@ -45,7 +47,7 @@ const FestivalInfo = ({ festival }) => {
         </section>
 
         <section aria-labelledby="tickets-heading">
-          <h2 id="tickets-heading">Tickets Options</h2>
+          <h2 id="tickets-heading">Tickets options</h2>
           <UnorderedList>
           {festival.tickets.map((ticket, index) => (
             <ListItem className="festival-info-li" key={`ticket-${index}`}>&#x2022; {ticket}</ListItem> ))}
@@ -60,13 +62,13 @@ const FestivalInfo = ({ festival }) => {
         </section>
         
         <section aria-labelledby="transportation-heading">
-          <h2 id="transportation-heading">Transportation Info</h2>
+          <h2 id="transportation-heading">Transportation options</h2>
           <div>
             {festival.transportationInfo}
           </div>
           <Link 
           href={festival.transportationLink}
-          aria-label="Get Transportation Info"
+          aria-label="Get Transportation Information"
           className="link"
           >
             Get Transportation Info

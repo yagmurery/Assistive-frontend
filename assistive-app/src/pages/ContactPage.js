@@ -10,6 +10,8 @@ import {
 } from "carbon-components-react";
 
 const ContactPage = () => {
+  document.title = "Contact us";
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,13 +30,17 @@ const ContactPage = () => {
   return (
     <div>
       <main role="main" className="contact-page">
-        <h1>Contact Us</h1>
+        <h1>Contact us</h1>
             <Form
               onSubmit={handleSubmit}
               aria-labelledby="contact-form-title"
               margin="20px"
             >
-              <h2>Get in Touch</h2>
+              <div
+                style={{fontSize: 'max(1.2em, 16px)'}}
+              >
+                Fill out the form with your information and once you're done click on the "Send message" button
+              </div>
 
               <FormGroup className="form-group">
                 <TextInput
@@ -84,7 +90,7 @@ const ContactPage = () => {
                 aria-label="submitButton"
                 className="button"
               >
-                Submit
+                Send message
               </Button>
             </Form>
       </main>
