@@ -12,12 +12,12 @@ const NavigationBar = () => {
         </li>
         <li>
           <Link href="/aboutus" aria-label="About page">
-            About us
+            About Us
           </Link>
         </li>
         <li>
           <Link href="/contactus" aria-label="Contact page">
-            Contact us
+            Contact Us
           </Link>
         </li>
       </ul>
