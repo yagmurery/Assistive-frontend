@@ -9,6 +9,10 @@ margin-top: 5%;
   margin-top: 3%;
 }
 
+.festival-description {
+  font-size: 1.2em;
+}
+
 .festival-tile {
   padding: 3%; 
   max-width: 500px;

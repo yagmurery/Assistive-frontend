@@ -1,6 +1,7 @@
 // PurchasePage.js
 import React, { useState } from "react";
 import { Form, FormGroup, TextInput, Button } from "carbon-components-react";
+import { useNavigate } from 'react-router-dom';
 
 const PurchasePage = () => {
   const [formData, setFormData] = useState({
@@ -15,10 +16,14 @@ const PurchasePage = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {e.preventDefault();
+
     alert("Purchase completed successfully!");
+  
+    navigate('/');
+
   };
 
   return (
