@@ -1,20 +1,8 @@
-#content {
-  font-size: 1rem;
-  line-height: 1.6; 
-  text-align: left;
-  color: #333333;
-  background-color: #ffffff;
-
-}
-
 ol {
   list-style-type: decimal;
 }
 
-
 #img {
   margin-top: 2%;
   width: 50%;
-  min-width: 200px;
-  object-fit: contain;
 }

@@ -61,7 +61,9 @@ const FestivalInfo = ({ festival }) => {
         
         <section aria-labelledby="transportation-heading">
           <h2 id="transportation-heading">Transportation Info</h2>
-          <p>{festival.transportationInfo}</p>
+          <div>
+            {festival.transportationInfo}
+          </div>
           <Link 
           href={festival.transportationLink}
           aria-label="Get Transportation Info"

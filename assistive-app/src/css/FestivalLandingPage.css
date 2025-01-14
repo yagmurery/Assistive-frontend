@@ -1,31 +1,21 @@
-.main-content {
-  padding: 2rem;
-  margin-left: 64px;
-  margin-right: 64px;
-  line-height: 1.6;
-  background-color: #ffffff;
+.festival-list {
+margin-top: 5%;
 }
 
-.festival-image:focus {
-  outline: 1px solid #004CA3;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
 }
 
 .festival-tile {
-  padding: 1rem; 
-  max-width: 800px;
+  padding: 3%; 
+  max-width: 500px;
   min-width:200px;
-  max-height: auto; 
-  align-content: center;
-  background-color: #ffffff; 
   border: 2px solid #cccccc; 
   border-radius: 8px; 
   transition: box-shadow 0.3s ease, transform 0.3s ease; 
-  margin: 0 auto; 
-  margin-top: 20px;
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 
@@ -33,8 +23,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transform: translateY(-4px); 
   outline: 5px solid #004CA3;
-  background-color: #ffffff;
-  color: #004CA3;
 }
 
 .festival-tile:focus-within {
@@ -42,57 +30,10 @@
   outline-offset: 4px; 
 }
 
-
-.festival-image {
-  width: 100%; 
-  max-width: 100%; 
-  height: 400px; 
-  object-fit: contain; 
-  border-radius: 8px;
-}
-
 .festival-name {
-  font-size: 1.7rem;
-  font-weight: bold;
   color: #004CA3; 
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
 }
 
 .festival-description {
-  font-size: 1.5rem;
-  color: #333333; 
-  line-height: 1.5; 
-  margin-bottom: 1rem;
-}
-
-
-.festival-tile .bx--btn {
-  margin-top: 20px; 
-}
-
-
-.festival-tile .bx--grid {
-  row-gap: 1rem; 
-}
-
-.festival-tile .bx--col {
-  padding: 0; 
-}
-
-
-
-.festival-container {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 100vh; 
-  background-color: #f4f4f4; 
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  margin-top: 1%;
 }

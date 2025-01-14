@@ -10,6 +10,7 @@ import festivals from './festivalData.json';
 import TransportPage from "./pages/TransportPage";
 import TransportResultsPage from "./pages/TransportResultsPage";
 import NavigationBar from './components/NavigationBar'
+import About from "./pages/About";
 
 
 const FestivalPage = () => {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/:id" element={<FestivalPage />} />
           <Route path="/transport" element={<TransportPage/>} />
           <Route path="/transportresults" element ={<TransportResultsPage/>}/>
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Router>

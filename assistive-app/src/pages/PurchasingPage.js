@@ -1,7 +1,6 @@
 // PurchasePage.js
 import React, { useState } from "react";
 import { Form, FormGroup, TextInput, Button } from "carbon-components-react";
-import "../css/PurchasePage.css";
 
 const PurchasePage = () => {
   const [formData, setFormData] = useState({

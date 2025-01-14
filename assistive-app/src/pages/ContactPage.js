@@ -24,7 +24,7 @@ const ContactPage = () => {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    alert('The message has been successfully sent!');
   };
 
   return (
@@ -38,7 +38,7 @@ const ContactPage = () => {
               aria-labelledby="contact-form-title"
               margin="20px"
             >
-              <h2 id="contact-form-title">Get in Touch</h2>
+              <h2>Get in Touch</h2>
 
               <FormGroup className="form-group">
                 <TextInput
@@ -85,10 +85,8 @@ const ContactPage = () => {
               <Button
                 type="submit"
                 kind="primary"
-                as={Link}
-                to={"/ticket"}
                 aria-label="submitButton"
-                className="buttonContact"
+                className="button"
               >
                 Submit
               </Button>

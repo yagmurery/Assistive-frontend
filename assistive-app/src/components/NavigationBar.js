@@ -1,24 +1,24 @@
 import React from 'react';
-import { Button } from 'carbon-components-react';
+import { Link } from 'carbon-components-react';
 
 const NavigationBar = () => {
   return (
     <nav aria-label="Main navigation" className="navigation-bar">
       <ul className="navigation-list">
         <li>
-          <Button kind="secondary" as="a" href="/home" aria-label="Home page">
+          <Link href="/home" aria-label="Home page">
             Home
-          </Button>
+          </Link>
         </li>
         <li>
-          <Button kind="secondary" as="a" href="/about" aria-label="About page">
+          <Link href="/about" aria-label="About page">
             About
-          </Button>
+          </Link>
         </li>
         <li>
-          <Button kind="secondary" as="a" href="/contact" aria-label="Contact page">
+          <Link href="/contact" aria-label="Contact page">
             Contact
-          </Button>
+          </Link>
         </li>
       </ul>
     </nav>
