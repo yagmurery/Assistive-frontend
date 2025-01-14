@@ -34,7 +34,11 @@ const ContactPage = () => {
               aria-labelledby="contact-form-title"
               margin="20px"
             >
-              <h2>Get in Touch</h2>
+              <div
+                style={{fontSize: 'max(1.2em, 16px)'}}
+              >
+                Fill out the form with your information and once you're done click on the "Send message" button
+              </div>
 
               <FormGroup className="form-group">
                 <TextInput
@@ -84,7 +88,7 @@ const ContactPage = () => {
                 aria-label="submitButton"
                 className="button"
               >
-                Submit
+                Send message
               </Button>
             </Form>
       </main>
