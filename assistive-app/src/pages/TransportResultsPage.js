@@ -41,7 +41,7 @@ const TransportResultsPage = () => {
     <div>
       <main role="main" className="transport-page">
         <h1>Travel Options</h1>
-            <div id="transport-form-title" style={{fontSize: 'max(1.2em, 16px)', marginBottom: '2%'}}>You can view different travel options in the table. </div>
+            <div id="transport-form-title" style={{fontSize: 'max(1.2em, 16px)', marginBottom: '2%'}}>You can view different travel options below. </div>
               
             {/* Table - default display */}
             <Table size="lg" useZebraStyles={false} aria-label="transport options table" className="transport-table">
