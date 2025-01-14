@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Tile,
-  Button,
-  Grid,
-  Column,
-  Row,
-} from "carbon-components-react";
+import { Tile, Button, Grid, Column, Row } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import "../css/FestivalLandingPage.css";
 
