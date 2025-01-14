@@ -1,6 +1,6 @@
 // PurchasePage.js
 import React, { useState } from "react";
-import { Form, FormGroup, TextInput, Button } from "carbon-components-react";
+import { Form, FormGroup, TextInput, Button, Checkbox } from "carbon-components-react";
 import { useNavigate } from 'react-router-dom';
 
 const PurchasePage = () => {
@@ -25,6 +25,7 @@ const PurchasePage = () => {
     navigate('/');
 
   };
+  const [isChecked, setIsChecked] = useState(false);
 
   return (
     <main role="main" className="purchase-page"> 
@@ -99,10 +100,21 @@ const PurchasePage = () => {
               />
             </FormGroup>
           </FormGroup>
-
-          <Button type="submit">
-            Pay now
-          </Button>
+          <FormGroup className ="form-group">
+            <Checkbox
+             id="checkbox"
+              labelText="I confirm that the input is correct and am ready to submit"
+              checked={isChecked}
+              onChange={(_, { checked }) => setIsChecked(checked)}
+              required
+              aria-required="true"
+             />
+          </FormGroup>
+          <FormGroup className ="form-group">
+            <Button type="submit">
+              Pay now
+            </Button>
+          </FormGroup>
         </Form>
     </main>
   );

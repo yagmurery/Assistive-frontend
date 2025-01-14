@@ -112,3 +112,11 @@ a {
   color: #004CA3;
   font-size: max(1.2em, 16px);
 }
+
+#checkbox {
+  width: 1.2rem;
+}
+
+.cds--checkbox-wrapper{
+  display: inline-flex;
+}
