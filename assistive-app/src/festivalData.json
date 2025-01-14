@@ -17,7 +17,8 @@
             ],
         "accessibilityInfo": 
             [
-                "1. Easy XS Camping is a campsite dedicated exclusively for guests with special needs and mobility-restricted guests and their companions. You can use it with a free registration ticket and a document proving your disability."
+                "1. Easy XS Camping is a campsite dedicated exclusively for guests with special needs and mobility-restricted guests and their companions. You can use it with a free registration ticket and a document proving your disability.",
+                "2. The campsite is located in the heart of the festival, close to the Main Entrance, the Main Stage, and the festival’s main services. The campsite is equipped with adapted toilets and showers, and a team of volunteers will be available to help you with any questions or needs you may have."
             ],
             "tickets":
             [
@@ -32,7 +33,7 @@
     {
         "id": "tomorrowland",
         "title": "Tomorrowland Festival",
-        "subtitle": "The island of freedom",
+        "subtitle": "Live Today, Love Tomorrow, Unite Forever",
         "dates": "18-20, 25-27 July 2025",
         "place": "De Schorre, Boom, Belgium",
         "image": "festival2.jpg",
@@ -40,10 +41,10 @@
         "lineup": ["Steve Aoki", "Hardwell", "David Guetta", "Amelie Lens", "Charlotte de Witte", "Dimitri Vegas & Like Mike", "Armin van Buuren", "Martin Garrix"],
         "sideEvents": 
             [
-                "1. DROPYARD: As the sun rises over the Island, the day bursts into a whirlwind of excitement. Begin your morning with a break-yoga session, fuelling yourself with boundless energy. Then, immerse yourself in the electrifying showdown of break dancers from around the world, where talent clashes and glory await. But as twilight descends, dropYard transforms into an exciting hub of urban culture, full of hip-hop beats and dynamic performances.", 
-                "MAGIC MIRROR: Step into the magical world of the Magic Mirror, where the impossible becomes possible, and the extraordinary becomes the norm. From mind-bending illusions to gravity-defying acrobatics, each act is a testament to the boundless possibilities of human creativity. With performers from around the globe captivating audiences under the iconic Big Top Tent, the stage is set for an unforgettable spectacle of talent and charisma. Prepare to have your pulses racing and your hearts pounding as the Magic Mirror delivers non-stop thrills and excitement, both indoors and outdoors. So come, join the adventure where the adrenaline never fades, and the wonder never ceases to amaze", 
-                "Ibis x ALL presents THE BUZZ: Ibis x ALL presents THE BUZZ: On the Island of Freedom, a stage awaits with a diverse lineup of emerging bands from around the world, promising a week of musical enchantment. Feel the thunderous roar of heavy riffs, sway to hypnotic electronic melodies, and get swept away by infectious pop-rock energy. Don’t just watch; be part of this extraordinary musical journey where each act has the potential to become a future headliner. Join us and discover your new favourite band, perhaps witnessing the birth of the next big thing.", 
-                "CIRQUE DU SZIGET: Embark on a journey into the spellbinding world of Cirque du Sziget, where gravity is defied, and imagination knows no limits. From gravity-defying jugglers to acrobats soaring through the air, each act is a testament to the boundless possibilities of human expression. With performers from around the globe captivating audiences under the iconic Big Top Tent, the stage is set for an unforgettable spectacle of talent and charisma. Prepare to have your pulses racing and your hearts pounding as Cirque du Sziget delivers non-stop thrills and excitement, both indoors and outdoors. So come, join the adventure where the adrenaline never fades, and the wonder never ceases to amaze"
+                "1. Tomorrowland Immersive Experience: The festival’s unique immersive audio-visual experience for all ages, has opened its doors at the emblematic Movistar Arena. Prepare to step into the magical world of Tomorrowland and discover a new way to explore some of the most iconic themes in the history of Tomorrowland, in the heart of Madrid. Tickets are now available", 
+                "2. Terra Solis: Tomorrowland welcomes you to a memorable adventure in the desert, a magical oasis, away from all the noise, where you can live to the rhythm of the sun", 
+                "3. Zephyr: Zephyr is a new Tomorrowland experience that will take you on a journey through the sky in a hot air baloon, where you can discover the world from a new perspective", 
+                "4. The Ride to Happines: The magical decorations, uplifting beats, distinctive food stalls and so much more will make you feel like you're on the meadow in Boom. And rest assured, a ride on the Ride To Happiness will be at least as amazing and memorable as the acts on the Main Stage.‘The Ride to Happiness by Tomorrowland' is the very first extreme spinning coaster in Europe. You will be catapulted no less than twice to a speed of 90km/h and will go upside down five times in the process. The cars can rotate freely, which will give you a different ride experience every time. The attraction has a total length of almost one kilometre and stands 35 metres above the ground at its highest point, where you will have an exceptional view of the park!"
             ],
         "accessibilityInfo": 
             [
@@ -68,23 +69,23 @@
 
         {
         "id": "mysteryland",
-        "title": "Dreamland Festival",
-        "subtitle": "The island of freedom",
-        "dates": "6-11 August 2025",
-        "place": "Budapest, Hungary",
+        "title": "Mysteryland Festival",
+        "subtitle": "A new era is about to erupt",
+        "dates": "22-24 August 2025",
+        "place": "Haarlemmermeer, Netherlands",
         "image": "festival3.jpg",
         "alt": "A detail of the hands of a crowd assissting to the main stage's concert at the Mysteryland festival.",
-        "lineup": ["ARTIST 1", "Artist 2", "Artist 3"],
+        "lineup": ["Dua Lipa", "Justin Timberlake", "Afrojack", "Katy Perry", "Martin Garrix", "The Chainsmokers", "Armin van Buuren", "David Guetta"],
         "sideEvents": 
             [
-                "DROPYARD: As the sun rises over the Island, the day bursts into a whirlwind of excitement. Begin your morning with a break-yoga session, fuelling yourself with boundless energy. Then, immerse yourself in the electrifying showdown of break dancers from around the world, where talent clashes and glory await. But as twilight descends, dropYard transforms into an exciting hub of urban culture, full of hip-hop beats and dynamic performances.", 
-                "MAGIC MIRROR: Step into the magical world of the Magic Mirror, where the impossible becomes possible, and the extraordinary becomes the norm. From mind-bending illusions to gravity-defying acrobatics, each act is a testament to the boundless possibilities of human creativity. With performers from around the globe captivating audiences under the iconic Big Top Tent, the stage is set for an unforgettable spectacle of talent and charisma. Prepare to have your pulses racing and your hearts pounding as the Magic Mirror delivers non-stop thrills and excitement, both indoors and outdoors. So come, join the adventure where the adrenaline never fades, and the wonder never ceases to amaze", 
-                "Ibis x ALL presents THE BUZZ: Ibis x ALL presents THE BUZZ: On the Island of Freedom, a stage awaits with a diverse lineup of emerging bands from around the world, promising a week of musical enchantment. Feel the thunderous roar of heavy riffs, sway to hypnotic electronic melodies, and get swept away by infectious pop-rock energy. Don’t just watch; be part of this extraordinary musical journey where each act has the potential to become a future headliner. Join us and discover your new favourite band, perhaps witnessing the birth of the next big thing.", 
-                "CIRQUE DU SZIGET: Embark on a journey into the spellbinding world of Cirque du Sziget, where gravity is defied, and imagination knows no limits. From gravity-defying jugglers to acrobats soaring through the air, each act is a testament to the boundless possibilities of human expression. With performers from around the globe captivating audiences under the iconic Big Top Tent, the stage is set for an unforgettable spectacle of talent and charisma. Prepare to have your pulses racing and your hearts pounding as Cirque du Sziget delivers non-stop thrills and excitement, both indoors and outdoors. So come, join the adventure where the adrenaline never fades, and the wonder never ceases to amaze"
+                "1. Neon Mysteryland - DIY Glow Art: Step into a glowing wonderland where creativity meets neon! Neon Mysteryland is a colorful and interactive art experience that invites festival-goers to express themselves using glow-in-the-dark paints, markers, and accessories. The area is bathed in UV lights, and artists and attendees can work on glowing murals, create personal glow graffiti, or design their own glowing shirts or accessories.", 
+                "2. The Popcorn Disco: Who says you can’t snack and dance at the same time? The Popcorn Disco combines a retro-inspired snack bar with a mini-dance floor that brings out all the groovy vibes. Attendees can grab a colorful cone of gourmet popcorn with funky flavors while grooving to a curated playlist of disco hits and pop bangers.", 
+                "3. Bubble Beats: Step into a world of soft inflatables, soothing sounds, and bubble magic. The Bubble Beats area is a laid-back spot for festival-goers to unwind with comfort while enjoying ambient electronic sounds. Think inflatable cushions, bubble machines, and gentle beats. It's the perfect place to relax and vibe after hours of high-energy performances."
             ],
         "accessibilityInfo": 
             [
-                "Tomorrowland puts in a great effort to make the festival accessible to visitors with a disability. A lot of attention goes to to the accessibility of the festival site and its surroundings: If you have a valid blue parking card at the festival, a parking space close to the Main Entrance is available. At the Main Entrance, there’*s an elevator, especially for visitors with a disability. Two persons are allowed to accompany them through this entrance (if they have a registered Tomorrowland Bracelet). Guidance dogs are allowed on the festival grounds. Make sure they are easily recognizable. Adapted toilets are situated in locations all over the festival site and at DreamVille (Aqua Care zone, Easy Tent Area and Montagoe). The accessibility on the festival grounds is guaranteed thanks to the wooden floors and concrete paths. For access to the CORE stage or Mainstage Comfort Area, please address one of the stewards, who can escort you. If you have a disability and still have questions, you can send an email to info@tomorrowland.com."
+                "1. Mysteryland is committed to making the festival accessible to all visitors, including those with disabilities. The festival site is wheelchair accessible, and there are designated viewing platforms for guests with physical disabilities.",
+                "2. The festival offers a range of services to accommodate guests with disabilities, including accessible restrooms, parking, and seating areas."
             ],
         "tickets":
             [
