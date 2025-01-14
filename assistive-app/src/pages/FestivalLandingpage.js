@@ -65,7 +65,7 @@ const FestivalLandingPage = () => {
                       aria-label={`More about ${festival.name}`}
                       className="link"
                     >
-                      Learn More
+                      Learn More About the Festival
                     </Link>
                   </div>
                 </Tile>
