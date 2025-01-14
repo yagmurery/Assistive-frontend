@@ -57,7 +57,7 @@ const TransportResultsPage = () => {
                         {Object.keys(row).filter(key => key !== 'id').map(key => {
                     return <TableCell className="tablecell" key={key}>{row[key]}</TableCell>;
                     })}
-                    <TableCell className="tablecell"> <Link href="/ticket">Buy this travel option</Link> </TableCell>
+                    <TableCell className="tablecell"> <Link href="/purchasetickets">Buy this travel option</Link> </TableCell>
                     </TableRow>)}
                 </TableBody>
               </Table>
@@ -69,7 +69,7 @@ const TransportResultsPage = () => {
                   <span>Departure: {row.departure}</span><br />
                   <span>Arrival: {row.arrival}</span><br />
                   <span>Cost: {row.cost}</span><br />
-                  <Link href="/ticket">Buy this travel option</Link>
+                  <Link href="/purchasetickets">Buy this travel option</Link>
                 </ListItem>
               ))}
             </OrderedList>

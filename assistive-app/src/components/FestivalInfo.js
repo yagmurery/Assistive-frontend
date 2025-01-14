@@ -57,7 +57,7 @@ const FestivalInfo = ({ festival }) => {
           aria-label="Purchase Tickets"
           class="link"
           >
-            Purchase Tickets
+            Purchase festival tickets
           </Link>
         </section>
         
@@ -71,7 +71,7 @@ const FestivalInfo = ({ festival }) => {
           aria-label="Get Transportation Information"
           className="link"
           >
-            Get Transportation Info
+            Get travel options information
           </Link>
         </section>      
       </main>

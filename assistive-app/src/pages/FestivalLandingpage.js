@@ -6,7 +6,7 @@ import "../css/FestivalLandingPage.css";
 const festivals = [
   {
     id: 1,
-    name: "Sziget",
+    name: "Sziget festival",
     description: "A grand celebration of music from various genres.",
     image: require("../assets/festival1.jpg"),
     alt: "A lively, big audience in front of the stage at the Sziget festival, surrounded by a colorful sunset.",
@@ -14,7 +14,7 @@ const festivals = [
   },
   {
     id: 2,
-    name: "Tomorrowland",
+    name: "Tomorrowland festival",
     description: "An exhibition showcasing music and diverse art forms.",
     image: require("../assets/festival2.jpg"),
     alt: "A large crowd of people dancing in front of a stage at the Tomorrowland festival, enjoying fireworks bursting over a castle.",
@@ -22,7 +22,7 @@ const festivals = [
   },
   {
     id: 3,
-    name: "Mysteryland",
+    name: "Mysteryland festival",
     description: "A mystic experience.",
     image: require("../assets/festival3.jpg"),
     alt: "A detail of the hands of a crowd assissting to the main stage's concert at the Mysteryland festival.",
@@ -65,7 +65,7 @@ const FestivalLandingPage = () => {
                       aria-label={`More about ${festival.name}`}
                       className="link"
                     >
-                      Learn More About the Festival
+                      Learn more about {festival.name}
                     </Link>
                   </div>
                 </Tile>
