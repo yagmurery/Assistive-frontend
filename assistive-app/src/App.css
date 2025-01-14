@@ -114,7 +114,7 @@ a {
 }
 
 #checkbox {
-  width: 1.2rem;
+  width: max(1.2rem,24px);
 }
 
 .cds--checkbox-wrapper{
