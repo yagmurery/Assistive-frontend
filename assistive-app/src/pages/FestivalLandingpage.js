@@ -6,7 +6,7 @@ import "../css/FestivalLandingPage.css";
 const festivals = [
   {
     id: 1,
-    name: "Sziget festival",
+    name: "Sziget Festival",
     description: "A grand celebration of music from various genres.",
     image: require("../assets/festival1.jpg"),
     alt: "A lively, big audience in front of the stage at the Sziget festival, surrounded by a colorful sunset.",
@@ -14,7 +14,7 @@ const festivals = [
   },
   {
     id: 2,
-    name: "Tomorrowland festival",
+    name: "Tomorrowland Festival",
     description: "An exhibition showcasing music and diverse art forms.",
     image: require("../assets/festival2.jpg"),
     alt: "A large crowd of people dancing in front of a stage at the Tomorrowland festival, enjoying fireworks bursting over a castle.",
@@ -22,7 +22,7 @@ const festivals = [
   },
   {
     id: 3,
-    name: "Mysteryland festival",
+    name: "Mysteryland Festival",
     description: "A mystic experience.",
     image: require("../assets/festival3.jpg"),
     alt: "A detail of the hands of a crowd assissting to the main stage's concert at the Mysteryland festival.",
@@ -33,7 +33,7 @@ const festivals = [
 const FestivalLandingPage = () => {
   return (
     <main>
-      <h1>European music festivals 2025</h1>
+      <h1>European Music Festivals 2025</h1>
       <div aria-label="Festival list" className="festival-list">
         <Grid>
           {festivals.map((festival) => (

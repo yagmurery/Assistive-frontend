@@ -40,7 +40,7 @@ const TransportResultsPage = () => {
   return (
     <div>
       <main role="main" className="transport-page">
-        <h1>Travel options</h1>
+        <h1>Travel Options</h1>
             <div id="transport-form-title" style={{fontSize: 'max(1.2em, 16px)', marginBottom: '2%'}}>You can view different travel options in the table. </div>
               
             {/* Table - default display */}
@@ -69,7 +69,7 @@ const TransportResultsPage = () => {
                   <span>Departure: {row.departure}</span><br />
                   <span>Arrival: {row.arrival}</span><br />
                   <span>Cost: {row.cost}</span><br />
-                  <Link href="/purchasetickets">Buy this travel option</Link>
+                  <Link href="/purchasetickets">Go to Purchase Tickets</Link>
                 </ListItem>
               ))}
             </OrderedList>
