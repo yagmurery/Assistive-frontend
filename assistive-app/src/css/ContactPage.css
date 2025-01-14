@@ -70,8 +70,9 @@ textarea:focus {
 
 button:hover,
 button:focus {
-  background-color: #004CA3;
-  outline: 2px solid #ffcc00;
+  background-color: #ffffff; 
+  outline: 2px solid #004CA3;
+  color: #004CA3;
 }
 
 a {

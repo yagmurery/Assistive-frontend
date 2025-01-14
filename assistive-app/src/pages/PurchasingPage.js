@@ -36,6 +36,7 @@ const PurchasePage = () => {
               onChange={handleChange}
               required
               aria-required="true"
+              placeholder="Enter the name on the card"
             />
           </FormGroup>
 
@@ -53,6 +54,7 @@ const PurchasePage = () => {
               required
               aria-required="true"
               aria-describedby="cardHelp"
+              placeholder="Enter the card number"
             />
             <small id="cardHelp" className="warning">
               Enter a 16-digit card number.
@@ -89,6 +91,7 @@ const PurchasePage = () => {
                 title="CVV must be 3 digits"
                 required
                 aria-required="true"
+                placeholder = "Enter the cvv"
               />
             </FormGroup>
           </FormGroup>
