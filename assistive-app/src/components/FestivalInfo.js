@@ -19,7 +19,7 @@ const FestivalInfo = ({ festival }) => {
         <h1>{festival.title}</h1>
         <h2>{festival.subtitle}</h2>
         <h3>{festival.dates} - {festival.place}</h3>
-        <img id="img" src={require ("../assets/" + festival.image)} alt={`${festival.title}`} />
+        <img id="img" src={require ("../assets/" + festival.image)} alt={`${festival.alt}`} />
       </header>
         <section aria-labelledby="event-information">
           <h2 id="event-information">Event information</h2>

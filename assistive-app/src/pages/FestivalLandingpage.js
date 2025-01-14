@@ -1,5 +1,5 @@
 import React from "react";
-import { Tile, Button, Grid, Column, Row } from "carbon-components-react";
+import { Tile, Grid, Column, Row } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import "../css/FestivalLandingPage.css";
 
@@ -8,21 +8,24 @@ const festivals = [
     id: 1,
     name: "Sziget",
     description: "A grand celebration of music from various genres.",
-    image: require("../assets/festival1.jpg"), // Use `require` for dynamic imports
+    image: require("../assets/festival1.jpg"),
+    alt: "A lively, big audience in front of the stage at the Sziget festival, surrounded by a colorful sunset.",
     link: "/sziget",
   },
   {
     id: 2,
     name: "Tomorrowland",
     description: "An exhibition showcasing music and diverse art forms.",
-    image: require("../assets/festival2.jpg"), // Use `require` for dynamic imports
+    image: require("../assets/festival2.jpg"),
+    alt: "A large crowd of people dancing in front of a stage at the Tomorrowland festival, enjoying fireworks bursting over a castle.",
     link: "/tomorrowland",
   },
   {
     id: 3,
     name: "Mysteryland",
     description: "A mystic experience.",
-    image: require("../assets/festival3.jpg"), // Use `require` for dynamic imports
+    image: require("../assets/festival3.jpg"),
+    alt: "A detail of the hands of a crowd assissting to the main stage's concert at the Mysteryland festival.",
     link: "/mysteryland",
   },
 ];
@@ -42,7 +45,7 @@ const FestivalLandingPage = () => {
                       <Column>
                         <img
                           src={festival.image}
-                          alt={`${festival.name}`}
+                          alt={festival.alt}
                           className="festival-image"
                         />
                       </Column>
@@ -58,8 +61,6 @@ const FestivalLandingPage = () => {
 
                   <div style={{ marginTop: "20px" }}>
                     <Link
-                      kind="primary"
-                      as={Link}
                       to={festival.link}
                       aria-label={`More about ${festival.name}`}
                       className="link"
