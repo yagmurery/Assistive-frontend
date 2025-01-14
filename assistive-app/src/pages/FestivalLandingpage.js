@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Tile,
-  Button,
-  Grid,
-  Column,
-  Row,
-} from "carbon-components-react";
+import { Tile, Button, Grid, Column, Row } from "carbon-components-react";
 import { Link } from "react-router-dom";
 import "../css/FestivalLandingPage.css";
 
@@ -67,7 +61,7 @@ const FestivalLandingPage = () => {
 
                     {/* Action Button */}
                     <div style={{ marginTop: "20px" }}>
-                      <Link
+                      <Button
                         kind="primary"
                         as={Link}
                         to={festival.link}
@@ -75,7 +69,7 @@ const FestivalLandingPage = () => {
                         className="link"
                       >
                         Learn More
-                      </Link>
+                      </Button>
                     </div>
                   </Tile>
                 </div>
