@@ -1,7 +1,7 @@
 [    
     {
         "id": "sziget",
-        "title": "Sziget Festival",
+        "title": "Sziget festival",
         "subtitle": "The island of freedom",
         "dates": "6-11 August 2025",
         "place": "Budapest, Hungary",
@@ -31,7 +31,7 @@
 
     {
         "id": "tomorrowland",
-        "title": "Tomorrowland",
+        "title": "Tomorrowland festival",
         "subtitle": "The island of freedom",
         "dates": "18-20, 25-27 July 2025",
         "place": "De Schorre, Boom, Belgium",
@@ -68,7 +68,7 @@
 
         {
         "id": "mysteryland",
-        "title": "Dreamland Festival",
+        "title": "Dreamland festival",
         "subtitle": "The island of freedom",
         "dates": "6-11 August 2025",
         "place": "Budapest, Hungary",

@@ -12,6 +12,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 const TransportPage = () => {
+  document.title = "Travel information";
+
   const [formData, setFormData] = useState({
     startingPoint: "",
   });
@@ -32,7 +34,7 @@ const TransportPage = () => {
   return (
     <div>
       <main role="main">
-        <h1>Travel Options</h1>
+        <h1>Travel information</h1>
             <Form
               onSubmit={handleSubmit}
               aria-labelledby="transport-form-title"

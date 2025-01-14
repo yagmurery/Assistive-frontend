@@ -4,6 +4,8 @@ import { Form, FormGroup, TextInput, Button } from "carbon-components-react";
 import { useNavigate } from 'react-router-dom';
 
 const PurchasePage = () => {
+  document.title = "Purchase tickets";
+
   const [formData, setFormData] = useState({
     name: "",
     cardNumber: "",

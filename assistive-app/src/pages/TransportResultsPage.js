@@ -1,8 +1,6 @@
 import React from "react";
 import {
   Link,
-  Column,
-  Grid,
   Table,
   TableHead,
   TableRow,
@@ -15,6 +13,7 @@ import {
 import "../css/TransportPage.css";
 
 const TransportResultsPage = () => {
+  document.title = "Travel information";
 
   const rows = [{
     id: 'travel-option-1',
@@ -41,7 +40,7 @@ const TransportResultsPage = () => {
   return (
     <div>
       <main role="main" className="transport-page">
-        <h1>Travel Options</h1>
+        <h1>Travel information</h1>
             <div id="transport-form-title">You can view different public transport options here. </div>
               
             {/* Table - default display */}

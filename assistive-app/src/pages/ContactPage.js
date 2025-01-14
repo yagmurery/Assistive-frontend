@@ -10,6 +10,8 @@ import {
 } from "carbon-components-react";
 
 const ContactPage = () => {
+  document.title = "Contact us";
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,7 +30,7 @@ const ContactPage = () => {
   return (
     <div>
       <main role="main" className="contact-page">
-        <h1>Contact Us</h1>
+        <h1>Contact us</h1>
             <Form
               onSubmit={handleSubmit}
               aria-labelledby="contact-form-title"

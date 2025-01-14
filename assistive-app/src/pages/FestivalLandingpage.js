@@ -33,7 +33,7 @@ const festivals = [
 const FestivalLandingPage = () => {
   return (
     <main>
-      <h1>Music Festivals 2025</h1>
+      <h1>European music festivals 2025</h1>
       <div aria-label="Festival list" className="festival-list">
         <Grid>
           {festivals.map((festival) => (

@@ -12,6 +12,8 @@ import PropTypes from 'prop-types';
 
 
 const FestivalInfo = ({ festival }) => {
+  document.title = festival.title;
+
   return (
     <div>
       <main id="content">

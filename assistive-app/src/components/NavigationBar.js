@@ -11,13 +11,13 @@ const NavigationBar = () => {
           </Link>
         </li>
         <li>
-          <Link href="/about" aria-label="About page">
-            About
+          <Link href="/aboutus" aria-label="About page">
+            About us
           </Link>
         </li>
         <li>
-          <Link href="/contact" aria-label="Contact page">
-            Contact
+          <Link href="/contactus" aria-label="Contact page">
+            Contact us
           </Link>
         </li>
       </ul>
