@@ -22,7 +22,7 @@ const PurchasePage = () => {
 
   const handleSubmit = (e) => {e.preventDefault();
 
-    alert("Purchase completed successfully!");
+    alert("Purchase completed successfully! You will be redirected to the home page.");
   
     navigate('/');
 

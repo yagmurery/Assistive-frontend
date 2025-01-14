@@ -24,7 +24,7 @@ const FestivalInfo = ({ festival }) => {
         <img id="img" src={require ("../assets/" + festival.image)} alt={`${festival.alt}`} />
       </header>
         <section aria-labelledby="event-information">
-          <h2 id="event-information">Event information</h2>
+          <h2 id="event-information">Event Information</h2>
           <h3>Lineup</h3>
           <UnorderedList>
             {festival.lineup.map((item, index) => (
@@ -47,7 +47,7 @@ const FestivalInfo = ({ festival }) => {
         </section>
 
         <section aria-labelledby="tickets-heading">
-          <h2 id="tickets-heading">Tickets options</h2>
+          <h2 id="tickets-heading">Ticket Options</h2>
           <UnorderedList>
           {festival.tickets.map((ticket, index) => (
             <ListItem className="festival-info-li" key={`ticket-${index}`}>&#x2022; {ticket}</ListItem> ))}
@@ -57,12 +57,12 @@ const FestivalInfo = ({ festival }) => {
           aria-label="Purchase Tickets"
           class="link"
           >
-            Purchase festival tickets
+            Purchase Festival Tickets
           </Link>
         </section>
         
         <section aria-labelledby="transportation-heading">
-          <h2 id="transportation-heading">Transportation options</h2>
+          <h2 id="transportation-heading">Travel Options</h2>
           <div>
             {festival.transportationInfo}
           </div>
@@ -71,7 +71,7 @@ const FestivalInfo = ({ festival }) => {
           aria-label="Get Transportation Information"
           className="link"
           >
-            Get travel options information
+            Get Travel Options Information
           </Link>
         </section>      
       </main>
