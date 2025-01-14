@@ -24,9 +24,9 @@
                 "General Admission: €100",
                 "VIP: €200"
             ],
-        "purchaseLink": "/ticket",
+        "purchaseLink": "/purchasetickets",
         "transportationInfo": "You can get transportation info and buy tickets following this link.",
-        "transportationLink": "/transport"
+        "transportationLink": "/traveloptions"
     },
 
     {
@@ -61,9 +61,9 @@
                 "General Admission: €100",
                 "VIP: €200"
             ],
-        "purchaseLink": "/ticket",
+        "purchaseLink": "/purchasetickets",
             "transportationInfo": "You can get transportation info and buy tickets following this link.",
-                "transportationLink": "/transport"
+                "transportationLink": "/traveloptions"
     },
 
         {
@@ -91,8 +91,8 @@
                 "General Admission: €100",
                 "VIP: €200"
             ],
-        "purchaseLink": "/ticket",
+        "purchaseLink": "/purchasetickets",
         "transportationInfo": "You can get transportation info and buy tickets following this link.",
-        "transportationLink": "/transport"
+        "transportationLink": "/traveloptions"
     }
 ]
