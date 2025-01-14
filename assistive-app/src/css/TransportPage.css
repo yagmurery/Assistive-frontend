@@ -6,6 +6,7 @@
 .table-transport {                       
   margin: 0 auto;           
   border-collapse: collapse;
+  display: block;
 }
 
 .tablecell {
@@ -20,8 +21,41 @@
   padding: 8px;            
   text-align: center; 
   word-wrap: break-word;
-  width: 24%;
+  width: 10%;
 }
+
+.ordered-list {
+  display: none; /* Initially hide the ordered list */
+}
+
+/* Media query for small screens */
+@media (max-width: 525px) {
+  .transport-table {
+    display: none; /* Hide the table */
+  }
+
+  .ordered-list {
+    display: block; /* Show the ordered list */
+    padding-left: 20px;
+  }
+
+  .ordered-list-item {
+    margin-bottom: 20px;
+  }
+
+  .ordered-list-item strong {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .ordered-list-item span {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+}
+
 
 /*This button behaves as a link, so a specific class is needed*/
 .button {

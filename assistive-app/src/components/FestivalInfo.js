@@ -24,22 +24,22 @@ const FestivalInfo = ({ festival }) => {
         <section aria-labelledby="event-information">
           <h2 id="event-information">Event information</h2>
           <h3>Lineup</h3>
-          <OrderedList>
+          <UnorderedList>
             {festival.lineup.map((item, index) => (
-              <ListItem key={`lineup-${index}`}>{item}</ListItem>
+              <ListItem className="festival-info-li" key={`lineup-${index}`}>&#x2022; {item}</ListItem>
             ))}
-          </OrderedList>
-          ... and many more to come!
+          </UnorderedList>
+          ... and many more to be announced!
           <h3>Side Events</h3>
           <OrderedList>
             {festival.sideEvents.map((event, index) => (
-              <ListItem key={`sideEvent-${index}`}>{event}</ListItem>
+              <ListItem className="festival-info-li" key={`sideEvent-${index}`}>{event}</ListItem>
             ))}
           </OrderedList>
           <h3>Accessibility Info</h3>
           <OrderedList>
             {festival.accessibilityInfo.map((info, index) => (
-              <ListItem key={`accessibilityInfo-${index}`}>{info}</ListItem>
+              <ListItem className="festival-info-li" key={`accessibilityInfo-${index}`}>{info}</ListItem>
             ))}
           </OrderedList>
         </section>
@@ -48,7 +48,7 @@ const FestivalInfo = ({ festival }) => {
           <h2 id="tickets-heading">Tickets Options</h2>
           <UnorderedList>
           {festival.tickets.map((ticket, index) => (
-            <ListItem key={`ticket-${index}`}>{ticket}</ListItem> ))}
+            <ListItem className="festival-info-li" key={`ticket-${index}`}>&#x2022; {ticket}</ListItem> ))}
           </UnorderedList>
           <Link 
           href={festival.purchaseLink} 

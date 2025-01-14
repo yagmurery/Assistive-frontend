@@ -8,8 +8,6 @@ import {
   Column,
   Grid,
 } from "carbon-components-react";
-import { Link } from "react-router-dom";
-import "../css/ContactPage.css";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -31,8 +29,6 @@ const ContactPage = () => {
     <div>
       <main role="main" className="contact-page">
         <h1>Contact Us</h1>
-        <Grid>
-          <Column>
             <Form
               onSubmit={handleSubmit}
               aria-labelledby="contact-form-title"
@@ -91,8 +87,6 @@ const ContactPage = () => {
                 Submit
               </Button>
             </Form>
-          </Column>
-        </Grid>
       </main>
     </div>
   );

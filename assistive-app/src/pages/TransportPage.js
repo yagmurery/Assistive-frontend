@@ -31,8 +31,6 @@ const TransportPage = () => {
     <div>
       <main role="main">
         <h1>Travel Options</h1>
-        <Grid>
-          <Column>
             <Form
               onSubmit={handleSubmit}
               aria-labelledby="transport-form-title"
@@ -75,8 +73,6 @@ const TransportPage = () => {
               </FormGroup>
               
             </Form>
-          </Column>
-        </Grid>
       </main>
     </div>
   );
