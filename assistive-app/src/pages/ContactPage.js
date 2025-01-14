@@ -39,7 +39,7 @@ const ContactPage = () => {
               <div
                 style={{fontSize: 'max(1.2em, 16px)'}}
               >
-                Fill out the form with your information and once you're done click on the "Send message" button
+                Fill out the form with your information and once you're done click on the "Send message" button below
               </div>
 
               <FormGroup className="form-group">

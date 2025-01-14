@@ -42,7 +42,7 @@ const TransportPage = () => {
               <div className="description">
                 You can view different public transport options here. 
                 <br />
-                Please indicate the bus or train station where you would like to start your journey.
+                Please indicate the bus or train station where you would like to start your journey and click on the "Show travel options" button below
               </div>
 
               <FormGroup className="form-group">
